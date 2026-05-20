@@ -1,0 +1,35 @@
+{
+  "id": "lambdaber:workflow_model_proteasome_001",
+  "title": "Atomic model building for 26S proteasome",
+  "description": "Building and refining atomic model into cryo-EM density",
+  "workflow_code": "WF-MODEL-PROT-001",
+  "workflow_type": "model_building",
+  "software_name": "Coot",
+  "processing_level": {
+    "unit": "level",
+    "numeric_value": 4.0
+  },
+  "software_version": "0.9.8.92",
+  "processing_parameters": "Real space refinement with secondary structure restraints",
+  "compute_resources": {
+    "cpu_hours": {
+      "unit": "hours",
+      "numeric_value": 120.0
+    },
+    "gpu_hours": {
+      "unit": "hours",
+      "numeric_value": 0.0
+    },
+    "memory_gb": {
+      "unit": "gigabytes",
+      "numeric_value": 64.0
+    },
+    "storage_gb": {
+      "unit": "gigabytes",
+      "numeric_value": 50.0
+    }
+  },
+  "started_at": "2024-04-25T09:00:00",
+  "completed_at": "2024-04-30T17:00:00",
+  "@type": "WorkflowRun"
+}

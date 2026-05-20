@@ -1,0 +1,31 @@
+id: https://example.org/kibler2024/sample/hetBGL03-15-18
+description: Pseudosymmetric hetero-hexamer with three distinct chains
+sample_code: hetBGL03-15-18
+sample_type: complex
+molecular_composition:
+  sequences:
+  - MDFYTLPTSHPV...
+  - MDFYTLPTSNPV...
+  - MDFYTLPTSHPA...
+  modifications:
+  - TEV protease cleavage site
+  - 6xHis tag (removed after purification)
+molecular_weight:
+  unit: kilodaltons
+  numeric_value: 182.5
+concentration:
+  unit: milligrams per milliliter
+  numeric_value: 2.5
+buffer_composition:
+  ph:
+    unit: pH units
+    numeric_value: 8.0
+  components:
+  - 25 mM Tris
+  - 300 mM NaCl
+storage_conditions:
+  temperature:
+    unit: degrees Celsius
+    numeric_value: 4.0
+  duration: < 1 week before measurement
+organism: NCBITaxon:562

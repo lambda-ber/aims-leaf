@@ -1,0 +1,31 @@
+@base <http://example.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lambdaber: <https://w3id.org/aims-leaf/> .
+@prefix nmdc: <https://w3id.org/nmdc/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lambdaber:instrument_titan_krios_001 a lambdaber:CryoEMInstrument ;
+    dcterms:title "Titan Krios G4" ;
+    lambdaber:accelerating_voltage [ a nmdc:QuantityValue ;
+            lambdaber:numeric_value "300.0"^^xsd:float ;
+            lambdaber:unit "kilovolts" ] ;
+    lambdaber:autoloader_capacity [ a nmdc:QuantityValue ;
+            lambdaber:numeric_value "12.0"^^xsd:float ;
+            lambdaber:unit "grids" ] ;
+    lambdaber:cs_corrector true ;
+    lambdaber:current_status "operational" ;
+    lambdaber:description "300kV Cryo-EM microscope with Gatan K3 detector" ;
+    lambdaber:detector_dimensions "5760x4092" ;
+    lambdaber:detector_manufacturer "Gatan" ;
+    lambdaber:detector_mode "counting" ;
+    lambdaber:detector_model "K3 BioQuantum" ;
+    lambdaber:detector_technology "direct_electron_detector" ;
+    lambdaber:installation_date "2023-03-15" ;
+    lambdaber:instrument_code "TK-G4-001" ;
+    lambdaber:manufacturer "Thermo Fisher Scientific" ;
+    lambdaber:model "Titan Krios G4" ;
+    lambdaber:phase_plate false ;
+    lambdaber:pixel_size_physical_um [ a nmdc:QuantityValue ;
+            lambdaber:numeric_value "5.0"^^xsd:float ;
+            lambdaber:unit "micrometers" ] .
+

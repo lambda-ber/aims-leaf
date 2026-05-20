@@ -1,0 +1,50 @@
+{
+   "CHMO": "http://purl.obolibrary.org/obo/CHMO_",
+   "CL": "http://purl.obolibrary.org/obo/CL_",
+   "GO": "http://purl.obolibrary.org/obo/GO_",
+   "NCBITaxon": "http://purl.obolibrary.org/obo/NCBITaxon_",
+   "PaNET": "http://purl.org/pan-science/PaNET/PaNET",
+   "ROR": "https://ror.org/",
+   "UBERON": "http://purl.obolibrary.org/obo/UBERON_",
+   "UO": "http://purl.obolibrary.org/obo/UO_",
+   "aimsleaf": "https://w3id.org/aims-leaf/",
+   "aimsplant": "https://w3id.org/aims-leaf/plant/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "imgCIF": "https://github.com/dials/cbflib/blob/main/doc/cif_img_1.8.6.dic#",
+   "ispyb": "https://ispyb.github.io/ISPyB/",
+   "lambdaber": "https://w3id.org/aims-leaf/",
+   "linkml": "https://w3id.org/linkml/",
+   "mmCIF": "http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/",
+   "nmdc": "https://w3id.org/nmdc/",
+   "nsls2": "https://github.com/NSLS2/BER-LAMBDA/",
+   "pdb": "https://files.rcsb.org/download/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "qud": "http://qudt.org/1.1/schema/qudt#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "https://schema.org/",
+   "simplescattering": "https://www.simplescattering.com/open_dataset/",
+   "sio": "http://semanticscience.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "wikidata": "http://www.wikidata.org/entity/",
+   "Any": {
+      "@id": "linkml:Any"
+   },
+   "AttributeValue": {
+      "@id": "nmdc:AttributeValue"
+   },
+   "DateTimeValue": {
+      "@id": "nmdc:DateTimeValue"
+   },
+   "PlantSample": {
+      "@id": "aimsplant:PlantSample"
+   },
+   "PlantSamplePreparation": {
+      "@id": "aimsplant:PlantSamplePreparation"
+   },
+   "QuantityValue": {
+      "@id": "nmdc:QuantityValue"
+   },
+   "TextValue": {
+      "@id": "nmdc:TextValue"
+   }
+}

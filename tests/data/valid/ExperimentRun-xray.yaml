@@ -1,0 +1,48 @@
+id: lambdaber:exp_xray_lysozyme_001
+title: Lysozyme crystal X-ray diffraction
+description: X-ray diffraction data collection from lysozyme crystals at ALS beamline
+  8.3.1
+experiment_code: EXP-XRD-LYS-2024-001
+experiment_date: '2024-04-10T09:30:00'
+operator_id: als_user_042
+technique: xray_crystallography
+experimental_conditions:
+  temperature:
+    numeric_value: -173
+    unit: degrees Celsius
+  humidity:
+    numeric_value: 0
+    unit: percent
+  pressure:
+    numeric_value: 101.325
+    unit: kilopascals
+  atmosphere: Nitrogen stream
+data_collection_strategy:
+  collection_mode: oscillation
+  total_frames:
+    numeric_value: 360
+    unit: frames
+  frame_rate:
+    numeric_value: 1
+    unit: frames per second
+  total_dose:
+    numeric_value: 0
+    unit: electrons per Angstrom squared
+  dose_per_frame:
+    numeric_value: 0
+    unit: electrons per Angstrom squared
+quality_metrics:
+  resolution:
+    numeric_value: 1.5
+    unit: Angstroms
+  completeness:
+    numeric_value: 99.8
+    unit: percent
+  signal_to_noise:
+    numeric_value: 15.2
+    unit: signal to noise ratio
+  r_factor:
+    numeric_value: 0.182
+    unit: R-factor
+raw_data_location: /data/als/2024/xray/lysozyme/
+processing_status: completed

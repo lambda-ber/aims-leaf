@@ -1,0 +1,66 @@
+{
+  "id": "lambdaber:xrf_img_001",
+  "title": "Synchrotron XRF elemental map of leaf tissue",
+  "description": "Multi-element XRF map showing distribution of nutrients and trace elements",
+  "file_name": "leaf_xrf_map_2um_resolution.h5",
+  "acquisition_date": "2024-05-25T16:00:00",
+  "pixel_size": {
+    "unit": "Angstroms",
+    "numeric_value": 2.0
+  },
+  "dimensions_x": {
+    "unit": "pixels",
+    "numeric_value": 500.0
+  },
+  "dimensions_y": {
+    "unit": "pixels",
+    "numeric_value": 400.0
+  },
+  "exposure_time": {
+    "unit": "seconds",
+    "numeric_value": 0.1
+  },
+  "dose": {
+    "unit": "electrons per Angstrom squared",
+    "numeric_value": 0.0
+  },
+  "defocus": {
+    "unit": "micrometers",
+    "numeric_value": 0.0
+  },
+  "astigmatism": {
+    "unit": "Angstroms",
+    "numeric_value": 0.0
+  },
+  "beam_energy": {
+    "unit": "kiloelectronvolts",
+    "numeric_value": 10.0
+  },
+  "beam_size": {
+    "unit": "micrometers",
+    "numeric_value": 2.0
+  },
+  "dwell_time": {
+    "unit": "milliseconds",
+    "numeric_value": 100.0
+  },
+  "elements_measured": [
+    "K",
+    "Ca",
+    "Mn",
+    "Fe",
+    "Cu",
+    "Zn",
+    "As",
+    "Se"
+  ],
+  "source_type": "synchrotron",
+  "detector_technology": "scintillator_coupled",
+  "detector_model": "Vortex-ME4 4-element silicon drift detector",
+  "flux": {
+    "unit": "photons per second",
+    "numeric_value": 1000000000000.0
+  },
+  "calibration_standard": "NIST SRM 1577c Bovine Liver",
+  "@type": "XRFImage"
+}

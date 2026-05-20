@@ -1,0 +1,143 @@
+#license: https://creativecommons.org/publicdomain/zero/1.0/
+#mapping_set_id: https://w3id.org/aims-leaf/
+#mapping_tool: https://w3id.org/linkml/
+#creator_id: linkml_user
+#mapping_date: 2026-05-20
+#curie_map: 
+# aimsleaf: https://w3id.org/aims-leaf/
+# lambdaber: https://w3id.org/aims-leaf/
+# linkml: https://w3id.org/linkml/
+# dcterms: http://purl.org/dc/terms/
+# skos: http://www.w3.org/2004/02/skos/core#
+# rdfs: http://www.w3.org/2000/01/rdf-schema#
+# prov: http://www.w3.org/ns/prov#
+# sio: http://semanticscience.org/resource/
+# nmdc: https://w3id.org/nmdc/
+# NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+# UBERON: http://purl.obolibrary.org/obo/UBERON_
+# CL: http://purl.obolibrary.org/obo/CL_
+# GO: http://purl.obolibrary.org/obo/GO_
+# nsls2: https://github.com/NSLS2/BER-LAMBDA/
+# imgCIF: https://github.com/dials/cbflib/blob/main/doc/cif_img_1.8.6.dic#
+# mmCIF: http://mmcif.wwpdb.org/dictionaries/mmcif_pdbx_v50.dic/Items/
+# ROR: https://ror.org/
+# wikidata: http://www.wikidata.org/entity/
+# CHMO: http://purl.obolibrary.org/obo/CHMO_
+# ispyb: https://ispyb.github.io/ISPyB/
+# PaNET: http://purl.org/pan-science/PaNET/PaNET
+# UO: http://purl.obolibrary.org/obo/UO_
+# simplescattering: https://www.simplescattering.com/open_dataset/
+# pdb: https://files.rcsb.org/download/
+subject_id	subject_label	predicate_id	predicate_modifier	object_id	object_label	match_type	subject_source	object_source	mapping_tool	confidence	subject_match_field	object_match_field	subject_category	object_category	match_string	comment
+aimsleaf:ExperimentalMethodEnum#x_ray_diffraction	x_ray_diffraction	skos:exactMatch		CHMO:0000156		skos:exactMatch	https://w3id.org/aims-leaf/						ExperimentalMethodEnum			
+aimsleaf:FacilityEnum#NSLS_II	NSLS_II	skos:exactMatch		ROR:01q47ea17		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#ALS	ALS	skos:exactMatch		ROR:02jbv0t02		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#SSRL	SSRL	skos:exactMatch		ROR:05gzmn429		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#ESRF	ESRF	skos:exactMatch		ROR:02550n020		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#DIAMOND	DIAMOND	skos:exactMatch		ROR:05etxs293		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#PHOTON_FACTORY	PHOTON_FACTORY	skos:exactMatch		ROR:01g5y5k24		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#APS	APS	skos:exactMatch		ROR:05gvnxz63		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#SPRING8	SPRING8	skos:exactMatch		ROR:01xjv7358		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#PETRA_III	PETRA_III	skos:exactMatch		ROR:01js2sh04		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#SOLEIL	SOLEIL	skos:exactMatch		ROR:01ydb3330		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#AUSTRALIAN_SYNCHROTRON	AUSTRALIAN_SYNCHROTRON	skos:exactMatch		ROR:03vk18a84		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#EMSL	EMSL	skos:exactMatch		ROR:05h992307		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#SNS	SNS	skos:exactMatch		ROR:01qz5mb56		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:FacilityEnum#HFIR	HFIR	skos:exactMatch		ROR:01qz5mb56		skos:exactMatch	https://w3id.org/aims-leaf/						FacilityEnum			
+aimsleaf:InstrumentCategoryEnum#SYNCHROTRON_BEAMLINE	SYNCHROTRON_BEAMLINE	skos:exactMatch		CHMO:0001084		skos:exactMatch	https://w3id.org/aims-leaf/						InstrumentCategoryEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#acetylation	acetylation	skos:exactMatch		GO:0006473		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#acylation	acylation	skos:exactMatch		GO:0043543		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#alkylation	alkylation	skos:exactMatch		GO:0008213		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#arginylation	arginylation	skos:exactMatch		GO:0016598		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#carbamoylation	carbamoylation	skos:exactMatch		GO:0046944		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#carboxylation	carboxylation	skos:exactMatch		GO:0018214		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#deacylation	deacylation	skos:exactMatch		GO:0035601		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#dealkylation	dealkylation	skos:exactMatch		GO:0008214		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#deamination	deamination	skos:exactMatch		GO:0018277		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#deglutathionylation	deglutathionylation	skos:exactMatch		GO:0080058		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#deglycation	deglycation	skos:exactMatch		GO:0036525		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#deglycosylation	deglycosylation	skos:exactMatch		GO:0006517		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#dephosphorylation	dephosphorylation	skos:exactMatch		GO:0006470		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#flavinylation	flavinylation	skos:exactMatch		GO:0017013		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#glutathionylation	glutathionylation	skos:exactMatch		GO:0010731		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#hydroxylation	hydroxylation	skos:exactMatch		GO:0018126		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#lipidation	lipidation	skos:exactMatch		GO:0006497		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#methylation	methylation	skos:exactMatch		GO:0006479		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#myristoylation	myristoylation	skos:exactMatch		GO:0018377		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#nitrosylation	nitrosylation	skos:exactMatch		GO:0017014		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#oxidation	oxidation	skos:exactMatch		GO:0018158		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#palmitoylation	palmitoylation	skos:exactMatch		GO:0018345		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#peptidyl_amino_acid_modification	peptidyl_amino_acid_modification	skos:exactMatch		GO:0018193		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#phosphorylation	phosphorylation	skos:exactMatch		GO:0006468		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#post_translational_protein_modification	post_translational_protein_modification	skos:exactMatch		GO:0043687		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#prenylation	prenylation	skos:exactMatch		GO:0018342		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#proteolysis	proteolysis	skos:exactMatch		GO:0006508		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#sulfation	sulfation	skos:exactMatch		GO:0006477		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#sulfhydration	sulfhydration	skos:exactMatch		GO:0044524		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#sumoylation	sumoylation	skos:exactMatch		GO:0016925		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+https://w3id.org/aims-leaf/functional_annotation/:PTMTypeEnum#ubiquitination	ubiquitination	skos:exactMatch		GO:0016567		skos:exactMatch	https://w3id.org/aims-leaf/functional_annotation						PTMTypeEnum			
+aimsleaf:TechniqueEnum#cryo_em	cryo_em	skos:exactMatch		CHMO:0002413		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#xray_crystallography	xray_crystallography	skos:exactMatch		CHMO:0000156		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#saxs	saxs	skos:exactMatch		CHMO:0000204		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#waxs	waxs	skos:exactMatch		CHMO:0000207		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#sans	sans	skos:exactMatch		CHMO:0000184		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#cryo_et	cryo_et	skos:exactMatch		CHMO:0002413		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#electron_microscopy	electron_microscopy	skos:exactMatch		CHMO:0000068		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#mass_spectrometry	mass_spectrometry	skos:exactMatch		CHMO:0000470		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#xas	xas	skos:exactMatch		CHMO:0000298		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#xanes	xanes	skos:exactMatch		CHMO:0000305		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#exafs	exafs	skos:exactMatch		CHMO:0000300		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#neutron_crystallography	neutron_crystallography	skos:exactMatch		CHMO:0000182		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#fiber_diffraction	fiber_diffraction	skos:exactMatch		CHMO:0000156		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#time_resolved_crystallography	time_resolved_crystallography	skos:exactMatch		CHMO:0000156		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#xray_tomography	xray_tomography	skos:exactMatch		CHMO:0002743		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#xray_microprobe	xray_microprobe	skos:exactMatch		CHMO:0002311		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#ftir_imaging	ftir_imaging	skos:exactMatch		CHMO:0000051		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#light_microscopy	light_microscopy	skos:exactMatch		CHMO:0000104		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#fluorescence_microscopy	fluorescence_microscopy	skos:exactMatch		CHMO:0000087		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#confocal_microscopy	confocal_microscopy	skos:exactMatch		CHMO:0000089		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:TechniqueEnum#raman_microscopy	raman_microscopy	skos:exactMatch		CHMO:0000056		skos:exactMatch	https://w3id.org/aims-leaf/						TechniqueEnum			
+aimsleaf:beam_center_x	experimentRun__beam_center_x	skos:exactMatch		nsls2:Beam_xy_x		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:beam_center_x	experimentRun__beam_center_x	skos:exactMatch		imgCIF:_diffrn_detector.beam_centre_x		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:beam_center_x	experimentRun__beam_center_x	skos:exactMatch		mmCIF:_diffrn_detector.beam_center_x		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:beam_center_x	experimentRun__beam_center_x	skos:exactMatch		ispyb:DataCollection.xBeam		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:beam_center_y	experimentRun__beam_center_y	skos:exactMatch		nsls2:Beam_xy_y		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:beam_center_y	experimentRun__beam_center_y	skos:exactMatch		imgCIF:_diffrn_detector.beam_centre_y		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:beam_center_y	experimentRun__beam_center_y	skos:exactMatch		mmCIF:_diffrn_detector.beam_center_y		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:beam_center_y	experimentRun__beam_center_y	skos:exactMatch		ispyb:DataCollection.yBeam		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:beamline	experimentRun__beamline	skos:exactMatch		nsls2:Beamline		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:beamline	experimentRun__beamline	skos:exactMatch		mmCIF:_diffrn_source.pdbx_synchrotron_beamline		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:beamline	experimentRun__beamline	skos:exactMatch		ispyb:BLSession.beamLineName		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:detector_distance	experimentRun__detector_distance	skos:exactMatch		nsls2:Detector_distance		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:detector_distance	experimentRun__detector_distance	skos:exactMatch		imgCIF:_diffrn_measurement.sample_detector_distance		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:detector_distance	experimentRun__detector_distance	skos:exactMatch		mmCIF:_diffrn_detector.distance		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:detector_distance	experimentRun__detector_distance	skos:exactMatch		ispyb:DataCollection.detectorDistance		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:end_time	experimentRun__end_time	skos:exactMatch		ispyb:DataCollection.endTime		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:exposure_time	experimentRun__exposure_time	skos:exactMatch		ispyb:DataCollection.exposureTime		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:flux	experimentRun__flux	skos:exactMatch		ispyb:DataCollection.flux		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:flux_end	experimentRun__flux_end	skos:exactMatch		ispyb:DataCollection.flux_end		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:oscillation_angle	experimentRun__oscillation_angle	skos:exactMatch		nsls2:Angle_increment		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:oscillation_angle	experimentRun__oscillation_angle	skos:exactMatch		imgCIF:_diffrn_scan_axis.angle_increment		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:oscillation_angle	experimentRun__oscillation_angle	skos:exactMatch		mmCIF:_diffrn_scan.angle_increment		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:oscillation_angle	experimentRun__oscillation_angle	skos:exactMatch		ispyb:DataCollection.axisRange		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:pixel_size_x	experimentRun__pixel_size_x	skos:exactMatch		nsls2:Pixel_size_x		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:pixel_size_x	experimentRun__pixel_size_x	skos:exactMatch		imgCIF:_array_element_size.size		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:pixel_size_y	experimentRun__pixel_size_y	skos:exactMatch		nsls2:Pixel_size_y		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:pixel_size_y	experimentRun__pixel_size_y	skos:exactMatch		imgCIF:_array_element_size.size		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:resolution	experimentRun__resolution	skos:exactMatch		ispyb:DataCollection.resolution		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:resolution_at_corner	experimentRun__resolution_at_corner	skos:exactMatch		ispyb:DataCollection.resolutionAtCorner		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:slit_gap_horizontal	experimentRun__slit_gap_horizontal	skos:exactMatch		ispyb:DataCollection.slitGapHorizontal		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:slit_gap_vertical	experimentRun__slit_gap_vertical	skos:exactMatch		ispyb:DataCollection.slitGapVertical		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:start_angle	experimentRun__start_angle	skos:exactMatch		nsls2:Start_angle		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:start_angle	experimentRun__start_angle	skos:exactMatch		imgCIF:_diffrn_scan_axis.angle_start		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:start_angle	experimentRun__start_angle	skos:exactMatch		ispyb:DataCollection.axisStart		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:start_time	experimentRun__start_time	skos:exactMatch		ispyb:DataCollection.startTime		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:synchrotron_mode	experimentRun__synchrotron_mode	skos:exactMatch		ispyb:DataCollection.synchrotronMode		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:total_rotation	experimentRun__total_rotation	skos:exactMatch		nsls2:Total_rotation_deg		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:total_rotation	experimentRun__total_rotation	skos:exactMatch		imgCIF:_diffrn_scan_axis.angle_range		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:transmission	experimentRun__transmission	skos:exactMatch		ispyb:DataCollection.transmission		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:undulator_gap	experimentRun__undulator_gap	skos:exactMatch		ispyb:DataCollection.undulatorGap1		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:wavelength	experimentRun__wavelength	skos:exactMatch		nsls2:Wavelength		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:wavelength	experimentRun__wavelength	skos:exactMatch		imgCIF:_diffrn_radiation_wavelength.wavelength		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:wavelength	experimentRun__wavelength	skos:exactMatch		mmCIF:_diffrn_radiation_wavelength.wavelength		skos:exactMatch	https://w3id.org/aims-leaf/									
+aimsleaf:wavelength	experimentRun__wavelength	skos:exactMatch		ispyb:DataCollection.wavelength		skos:exactMatch	https://w3id.org/aims-leaf/									

@@ -1,0 +1,84 @@
+
+
+# Slot: studies 
+
+
+_All studies in this dataset_
+
+
+
+
+
+URI: [aimsleaf:studies](https://w3id.org/aims-leaf/studies)
+Alias: studies
+
+<!-- no inheritance hierarchy -->
+
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [Dataset](Dataset.md) | Root container holding flat entity collections and association tables |  no  |
+
+
+
+
+
+
+## Properties
+
+* Range: [Study](Study.md)
+
+* Multivalued: True
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/aims-leaf/
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | aimsleaf:studies |
+| native | aimsleaf:studies |
+
+
+
+
+## LinkML Source
+
+<details>
+```yaml
+name: studies
+description: All studies in this dataset
+from_schema: https://w3id.org/aims-leaf/
+rank: 1000
+alias: studies
+owner: Dataset
+domain_of:
+- Dataset
+range: Study
+multivalued: true
+inlined: true
+inlined_as_list: true
+
+```
+</details>

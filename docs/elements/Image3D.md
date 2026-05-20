@@ -1,0 +1,396 @@
+
+
+# Class: Image3D 
+
+
+_A 3D volume or tomogram_
+
+
+
+
+
+URI: [aimsleaf:Image3D](https://w3id.org/aims-leaf/Image3D)
+
+
+
+
+
+```mermaid
+ classDiagram
+    class Image3D
+    click Image3D href "../Image3D/"
+      Image <|-- Image3D
+        click Image href "../Image/"
+      
+      Image3D : acquisition_date
+        
+      Image3D : description
+        
+      Image3D : dimensions_x
+        
+          
+    
+        
+        
+        Image3D --> "0..1" QuantityValue : dimensions_x
+        click QuantityValue href "../QuantityValue/"
+    
+
+        
+      Image3D : dimensions_y
+        
+          
+    
+        
+        
+        Image3D --> "0..1" QuantityValue : dimensions_y
+        click QuantityValue href "../QuantityValue/"
+    
+
+        
+      Image3D : dimensions_z
+        
+          
+    
+        
+        
+        Image3D --> "0..1" QuantityValue : dimensions_z
+        click QuantityValue href "../QuantityValue/"
+    
+
+        
+      Image3D : dose
+        
+          
+    
+        
+        
+        Image3D --> "0..1" QuantityValue : dose
+        click QuantityValue href "../QuantityValue/"
+    
+
+        
+      Image3D : exposure_time
+        
+          
+    
+        
+        
+        Image3D --> "0..1" QuantityValue : exposure_time
+        click QuantityValue href "../QuantityValue/"
+    
+
+        
+      Image3D : file_name
+        
+      Image3D : id
+        
+      Image3D : pixel_size
+        
+          
+    
+        
+        
+        Image3D --> "0..1" QuantityValue : pixel_size
+        click QuantityValue href "../QuantityValue/"
+    
+
+        
+      Image3D : reconstruction_method
+        
+      Image3D : title
+        
+      Image3D : voxel_size
+        
+          
+    
+        
+        
+        Image3D --> "0..1" QuantityValue : voxel_size
+        click QuantityValue href "../QuantityValue/"
+    
+
+        
+      
+```
+
+
+
+
+
+## Inheritance
+* [NamedThing](NamedThing.md)
+    * [Image](Image.md)
+        * **Image3D**
+
+
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [dimensions_z](dimensions_z.md) | 0..1 <br/> [QuantityValue](QuantityValue.md) | Image depth, typically specified in pixels or slices | direct |
+| [voxel_size](voxel_size.md) | 0..1 <br/> [QuantityValue](QuantityValue.md) | Voxel size, typically specified in Angstroms | direct |
+| [reconstruction_method](reconstruction_method.md) | 0..1 <br/> [String](String.md) | Method used for 3D reconstruction | direct |
+| [file_name](file_name.md) | 1 <br/> [String](String.md) | Image file name | [Image](Image.md) |
+| [acquisition_date](acquisition_date.md) | 0..1 <br/> [Date](Date.md) | Date image was acquired | [Image](Image.md) |
+| [pixel_size](pixel_size.md) | 0..1 <br/> [QuantityValue](QuantityValue.md) | Pixel size, typically specified in Angstroms | [Image](Image.md) |
+| [dimensions_x](dimensions_x.md) | 0..1 <br/> [QuantityValue](QuantityValue.md) | Image width, typically specified in pixels | [Image](Image.md) |
+| [dimensions_y](dimensions_y.md) | 0..1 <br/> [QuantityValue](QuantityValue.md) | Image height, typically specified in pixels | [Image](Image.md) |
+| [exposure_time](exposure_time.md) | 0..1 <br/> [QuantityValue](QuantityValue.md) | Exposure time, typically specified in seconds | [Image](Image.md) |
+| [dose](dose.md) | 0..1 <br/> [QuantityValue](QuantityValue.md) | Electron dose in e-/Å² | [Image](Image.md) |
+| [id](id.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Globally unique identifier as an IRI or CURIE for machine processing and exte... | [NamedThing](NamedThing.md) |
+| [title](title.md) | 0..1 <br/> [String](String.md) | A human-readable name or title for this entity | [NamedThing](NamedThing.md) |
+| [description](description.md) | 0..1 <br/> [String](String.md) | A detailed textual description of this entity | [NamedThing](NamedThing.md) |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://w3id.org/aims-leaf/
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | aimsleaf:Image3D |
+| native | aimsleaf:Image3D |
+
+
+
+
+
+
+## LinkML Source
+
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+
+### Direct
+
+<details>
+```yaml
+name: Image3D
+description: A 3D volume or tomogram
+from_schema: https://w3id.org/aims-leaf/
+is_a: Image
+attributes:
+  dimensions_z:
+    name: dimensions_z
+    description: Image depth, typically specified in pixels or slices. Data providers
+      may specify alternative units by including the unit in the QuantityValue.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    domain_of:
+    - Image3D
+    range: QuantityValue
+    inlined: true
+  voxel_size:
+    name: voxel_size
+    description: Voxel size, typically specified in Angstroms. Data providers may
+      specify alternative units by including the unit in the QuantityValue.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    domain_of:
+    - Image3D
+    range: QuantityValue
+    inlined: true
+  reconstruction_method:
+    name: reconstruction_method
+    description: Method used for 3D reconstruction
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    domain_of:
+    - Image3D
+
+```
+</details>
+
+### Induced
+
+<details>
+```yaml
+name: Image3D
+description: A 3D volume or tomogram
+from_schema: https://w3id.org/aims-leaf/
+is_a: Image
+attributes:
+  dimensions_z:
+    name: dimensions_z
+    description: Image depth, typically specified in pixels or slices. Data providers
+      may specify alternative units by including the unit in the QuantityValue.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: dimensions_z
+    owner: Image3D
+    domain_of:
+    - Image3D
+    range: QuantityValue
+    inlined: true
+  voxel_size:
+    name: voxel_size
+    description: Voxel size, typically specified in Angstroms. Data providers may
+      specify alternative units by including the unit in the QuantityValue.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: voxel_size
+    owner: Image3D
+    domain_of:
+    - Image3D
+    range: QuantityValue
+    inlined: true
+  reconstruction_method:
+    name: reconstruction_method
+    description: Method used for 3D reconstruction
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: reconstruction_method
+    owner: Image3D
+    domain_of:
+    - Image3D
+    range: string
+  file_name:
+    name: file_name
+    description: Image file name
+    from_schema: https://w3id.org/aims-leaf/
+    alias: file_name
+    owner: Image3D
+    domain_of:
+    - DataFile
+    - Image
+    range: string
+    required: true
+  acquisition_date:
+    name: acquisition_date
+    description: Date image was acquired
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: acquisition_date
+    owner: Image3D
+    domain_of:
+    - Image
+    range: date
+  pixel_size:
+    name: pixel_size
+    description: Pixel size, typically specified in Angstroms. Data providers may
+      specify alternative units by including the unit in the QuantityValue.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: pixel_size
+    owner: Image3D
+    domain_of:
+    - Image
+    - FTIRImage
+    - XRFImage
+    - RefinementParameters
+    range: QuantityValue
+    inlined: true
+  dimensions_x:
+    name: dimensions_x
+    description: Image width, typically specified in pixels. Data providers may specify
+      alternative units by including the unit in the QuantityValue.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: dimensions_x
+    owner: Image3D
+    domain_of:
+    - Image
+    - FTIRImage
+    - XRFImage
+    range: QuantityValue
+    inlined: true
+  dimensions_y:
+    name: dimensions_y
+    description: Image height, typically specified in pixels. Data providers may specify
+      alternative units by including the unit in the QuantityValue.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: dimensions_y
+    owner: Image3D
+    domain_of:
+    - Image
+    - FTIRImage
+    - XRFImage
+    range: QuantityValue
+    inlined: true
+  exposure_time:
+    name: exposure_time
+    description: Exposure time, typically specified in seconds. Data providers may
+      specify alternative units by including the unit in the QuantityValue.
+    from_schema: https://w3id.org/aims-leaf/
+    alias: exposure_time
+    owner: Image3D
+    domain_of:
+    - ExperimentRun
+    - Image
+    - ExperimentalConditions
+    range: QuantityValue
+    inlined: true
+  dose:
+    name: dose
+    description: Electron dose in e-/Å²
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: dose
+    owner: Image3D
+    domain_of:
+    - Image
+    range: QuantityValue
+    inlined: true
+  id:
+    name: id
+    description: Globally unique identifier as an IRI or CURIE for machine processing
+      and external references. Used for linking data across systems and semantic web
+      integration.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    identifier: true
+    alias: id
+    owner: Image3D
+    domain_of:
+    - NamedThing
+    - Attribute
+    range: uriorcurie
+    required: true
+  title:
+    name: title
+    description: A human-readable name or title for this entity
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    slot_uri: dcterms:title
+    alias: title
+    owner: Image3D
+    domain_of:
+    - NamedThing
+    range: string
+  description:
+    name: description
+    description: A detailed textual description of this entity
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: description
+    owner: Image3D
+    domain_of:
+    - NamedThing
+    - AttributeGroup
+    range: string
+
+```
+</details>
