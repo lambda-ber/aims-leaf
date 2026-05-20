@@ -1,6 +1,6 @@
 id: https://w3id.org/aims-leaf/
 name: aims-leaf
-version: "0.0.0" # Managed by uv-dynamic-versioning
+version: "0.0.0.post2.dev0+ec8ec92" # Managed by uv-dynamic-versioning
 description: |
   aims-leaf is a comprehensive schema for representing multimodal structural biology imaging data, 
   from atomic-resolution structures to tissue-level organization. It supports diverse experimental 

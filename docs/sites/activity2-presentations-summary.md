@@ -12,7 +12,7 @@ Summary of presentations from `assets/external/Activity 2/Presentation Slides/`
 
 - **Data Standardization Goals**:
   - Map standards landscape
-  - Devise ETL strategy
+  - Devise integration strategy
   - Create and populate lakehouse-ready schema for studies, samples, sample processing, workflow runs, metadata, and annotations
 
 - **Standards Mapping**:

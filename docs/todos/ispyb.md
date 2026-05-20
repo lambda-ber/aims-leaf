@@ -45,7 +45,7 @@ Key tables (from tables.sql):
 - `AutoProcProgram`, `AutoProcIntegration`, `AutoProcScaling`, `AutoProcScalingStatistics`
 - `PhasingStep`, `PhasingAnalysis`, `ModelBuilding`
 
-## ETL Strategy
+## Integration Strategy
 
 ### Phase 1: Schema Import (DuckDB)
 
@@ -82,10 +82,10 @@ mappings:
     transform: null
 ```
 
-### Phase 3: ETL Scripts
+### Phase 3: Conversion Scripts
 
 ```python
-# src/aims_leaf_schema/etl/ispyb_import.py
+# src/aims_leaf_schema/integrations/ispyb_import.py
 """Import ISPyB data into aims-leaf format."""
 
 def ispyb_to_study(session: dict) -> Study:
@@ -165,14 +165,14 @@ WorkflowRun fields with new `ispyb:AutoProcScalingStatistics.*` mappings:
 
 ## Remaining Tasks
 
-### ETL Infrastructure (Priority: High)
+### Data Integration Infrastructure (Priority: High)
 
 - [ ] Download and mirror ISPyB DDL to `assets/external/ispyb/`
 - [ ] Create `scripts/mysql_to_duckdb.py` for DDL conversion
 - [ ] Create `db/ispyb_schema.ddb` with empty ISPyB tables
 - [ ] Create `mappings/ispyb_to_lambda_ber.yaml` mapping file
-- [ ] Create `src/aims_leaf_schema/etl/ispyb_import.py` ETL module
-- [ ] Add `just ispyb-sync` target for running ETL
+- [ ] Create `src/aims_leaf_schema/integrations/ispyb_import.py` import module
+- [ ] Add `just ispyb-sync` target for running imports
 
 ### Sample/Container Tracking (Priority: Medium)
 

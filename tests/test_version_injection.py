@@ -164,8 +164,8 @@ def test_build_injects_version():
             "Version in built package is still 0.0.0 - injection may have failed"
         )
     else:
-        assert version == "0.0.0", (
-            "Expected fallback version 0.0.0 in an untagged repository"
+        assert version.startswith("0.0.0"), (
+            "Expected fallback base version 0.0.0 in an untagged repository"
         )
 
     # Version should look like a valid PEP 440 version

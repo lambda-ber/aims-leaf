@@ -36,8 +36,6 @@ nav:
     - Data Lakehouse Strategy: background/aims-leaf-data-lakehouse-strategy.md
     - Integration with BER: background/ber-doe-facilities.md
     - Data Quality Challenges: background/data-quality-challenges.md
-  - Examples:
-    - Simple Scattering GluRS Dataset: examples/simplescattering-glurs-analysis.md
   - Technical:
     - Mapping to OME: technical/ome-mapping.md
   - Slides:

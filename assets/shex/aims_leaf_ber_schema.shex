@@ -1,5 +1,5 @@
 # metamodel_version: 1.7.0
-# version: 0.0.0
+# version: 0.0.0.post2.dev0+ec8ec92
 BASE <https://w3id.org/aims-leaf/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
