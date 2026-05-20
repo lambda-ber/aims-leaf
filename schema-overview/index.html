@@ -1,0 +1,1626 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://lambda-ber.github.io/aims-leaf/schema-overview/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>AIMS-LEAF Overview - aims-leaf</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aims-leaf-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="aims-leaf" class="md-header__button md-logo" aria-label="aims-leaf" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            aims-leaf
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AIMS-LEAF Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/lambda-ber/aims-leaf" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="aims-leaf" class="md-nav__button md-logo" aria-label="aims-leaf" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    aims-leaf
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/lambda-ber/aims-leaf" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Schema
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Background
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Background
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/nexus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NEXUS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/mmcif/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    mmCIF
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/empiar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMPIAR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/emdb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EMDB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/dials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DIALS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/sasdb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SASDB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/rembi-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    REMBI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/aims-leaf-data-lakehouse-strategy.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Lakehouse Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/ber-doe-facilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integration with BER
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../background/data-quality-challenges/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Quality Challenges
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/simplescattering-glurs-analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Simple Scattering GluRS Dataset
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technical
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Technical
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical/ome-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mapping to OME
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Slides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Slides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slides/overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slides/technical-overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Deep Dive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Philosophy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Container
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logical-groupings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logical Groupings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biological-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Biological Materials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instrumentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instrumentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Collection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Processing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-products" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Products
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#association-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Association Tables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supporting-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supporting Classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Supporting Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Metadata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparation-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation Details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality &amp; Processing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-enumerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Enumerations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Enumerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample &amp; Preparation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#techniques-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Techniques &amp; Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instruments-detectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instruments &amp; Detectors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data &amp; Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Techniques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-cryo-em-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Cryo-EM Study
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      External Links
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="aims-leaf-overview">AIMS-LEAF Overview</h1>
+<p>The <a href="https://w3id.org/aims-leaf/">aims-leaf</a> is a comprehensive schema for representing multimodal structural biology imaging data, from atomic-resolution structures to tissue-level organization.</p>
+<h2 id="design-philosophy">Design Philosophy</h2>
+<p>The schema follows a <strong>relational design</strong> with:
+- Flat entity collections stored at the Dataset level
+- Explicit association tables for many-to-many relationships
+- SQL-friendly structure that maps cleanly to normalized databases</p>
+<h2 id="schema-structure">Schema Structure</h2>
+<pre><code>Dataset (root container)
+├── Entity Tables (flat collections)
+│   ├── studies
+│   ├── samples
+│   ├── sample_preparations
+│   ├── instruments
+│   ├── experiment_runs
+│   ├── workflow_runs
+│   ├── data_files
+│   └── images
+│
+└── Association Tables (M:N relationships)
+    ├── study_sample_associations
+    ├── study_experiment_associations
+    ├── study_workflow_associations
+    ├── experiment_sample_associations
+    ├── experiment_instrument_associations
+    ├── workflow_experiment_associations
+    ├── workflow_input_associations
+    └── workflow_output_associations
+</code></pre>
+<h2 id="core-classes">Core Classes</h2>
+<h3 id="container">Container</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/Dataset">Dataset</a></td>
+<td>Root container holding all entity collections and association tables</td>
+</tr>
+</tbody>
+</table>
+<h3 id="logical-groupings">Logical Groupings</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/Study">Study</a></td>
+<td>Lightweight grouping of related experiments investigating a research question</td>
+</tr>
+</tbody>
+</table>
+<h3 id="biological-materials">Biological Materials</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/Sample">Sample</a></td>
+<td>Biological specimens (proteins, nucleic acids, complexes, cells, tissues)</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/ProteinConstruct">ProteinConstruct</a></td>
+<td>Detailed protein construct information including expression system</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/SamplePreparation">SamplePreparation</a></td>
+<td>How samples were prepared for specific techniques</td>
+</tr>
+</tbody>
+</table>
+<h3 id="instrumentation">Instrumentation</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/Instrument">Instrument</a></td>
+<td>Base class for all instruments</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/CryoEMInstrument">CryoEMInstrument</a></td>
+<td>Cryo-electron microscopes (e.g., Titan Krios)</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/XRayInstrument">XRayInstrument</a></td>
+<td>X-ray diffractometers and synchrotron beamlines</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/SAXSInstrument">SAXSInstrument</a></td>
+<td>Small-angle X-ray scattering instruments</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/BeamlineInstrument">BeamlineInstrument</a></td>
+<td>Synchrotron beamline specifications</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-collection">Data Collection</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/ExperimentRun">ExperimentRun</a></td>
+<td>Individual data collection sessions with quality metrics</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-processing">Data Processing</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/WorkflowRun">WorkflowRun</a></td>
+<td>Computational processing steps (motion correction, reconstruction, refinement)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-products">Data Products</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/DataFile">DataFile</a></td>
+<td>Any files generated or used, with checksums for integrity</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/Image">Image</a></td>
+<td>Base class for all imaging data</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/Micrograph">Micrograph</a></td>
+<td>2D electron microscopy images</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/Movie">Movie</a></td>
+<td>Cryo-EM movie stacks</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/FTIRImage">FTIRImage</a></td>
+<td>Infrared spectroscopy molecular composition maps</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/FluorescenceImage">FluorescenceImage</a></td>
+<td>Fluorophore-labeled cellular imaging</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/OpticalImage">OpticalImage</a></td>
+<td>Brightfield/phase contrast microscopy</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/XRFImage">XRFImage</a></td>
+<td>X-ray fluorescence elemental distribution maps</td>
+</tr>
+</tbody>
+</table>
+<h2 id="association-tables">Association Tables</h2>
+<p>Association tables model many-to-many relationships and can carry relationship metadata:</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Links</th>
+<th>Metadata</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/StudySampleAssociation">StudySampleAssociation</a></td>
+<td>Study ↔ Sample</td>
+<td>role (target, control, reference)</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/StudyExperimentAssociation">StudyExperimentAssociation</a></td>
+<td>Study ↔ ExperimentRun</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/StudyWorkflowAssociation">StudyWorkflowAssociation</a></td>
+<td>Study ↔ WorkflowRun</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/ExperimentSampleAssociation">ExperimentSampleAssociation</a></td>
+<td>ExperimentRun ↔ Sample</td>
+<td>role, preparation used</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/ExperimentInstrumentAssociation">ExperimentInstrumentAssociation</a></td>
+<td>ExperimentRun ↔ Instrument</td>
+<td>role (primary, detector)</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/WorkflowExperimentAssociation">WorkflowExperimentAssociation</a></td>
+<td>WorkflowRun ↔ ExperimentRun</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/WorkflowInputAssociation">WorkflowInputAssociation</a></td>
+<td>WorkflowRun ↔ DataFile</td>
+<td>input type</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/WorkflowOutputAssociation">WorkflowOutputAssociation</a></td>
+<td>WorkflowRun ↔ DataFile</td>
+<td>output type</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supporting-classes">Supporting Classes</h2>
+<h3 id="sample-metadata">Sample Metadata</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/MolecularComposition">MolecularComposition</a></td>
+<td>Sequences, modifications, ligands</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/BufferComposition">BufferComposition</a></td>
+<td>pH, salts, additives</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/StorageConditions">StorageConditions</a></td>
+<td>Temperature, duration, method</td>
+</tr>
+</tbody>
+</table>
+<h3 id="preparation-details">Preparation Details</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/CryoEMPreparation">CryoEMPreparation</a></td>
+<td>Grid type, vitrification parameters</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/CrystallizationConditions">CrystallizationConditions</a></td>
+<td>Crystal growth conditions</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/XRayPreparation">XRayPreparation</a></td>
+<td>X-ray specific preparation</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/SAXSPreparation">SAXSPreparation</a></td>
+<td>SAXS/WAXS preparation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quality-processing">Quality &amp; Processing</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/QualityMetrics">QualityMetrics</a></td>
+<td>Resolution, R-factors, validation scores</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/ComputeResources">ComputeResources</a></td>
+<td>CPU/GPU hours, memory usage</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/ExperimentalConditions">ExperimentalConditions</a></td>
+<td>Temperature, humidity during collection</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/DataCollectionStrategy">DataCollectionStrategy</a></td>
+<td>Collection parameters and strategy</td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-enumerations">Key Enumerations</h2>
+<h3 id="sample-preparation">Sample &amp; Preparation</h3>
+<table>
+<thead>
+<tr>
+<th>Enum</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/SampleTypeEnum">SampleTypeEnum</a></td>
+<td>protein, nucleic_acid, complex, cell, tissue</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/PreparationTypeEnum">PreparationTypeEnum</a></td>
+<td>cryo_em_grid, crystallization, saxs_sample</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/GridTypeEnum">GridTypeEnum</a></td>
+<td>holey_carbon, continuous_carbon, graphene</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/VitrificationMethodEnum">VitrificationMethodEnum</a></td>
+<td>plunge_freezing, focused_ion_beam</td>
+</tr>
+</tbody>
+</table>
+<h3 id="techniques-methods">Techniques &amp; Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Enum</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/TechniqueEnum">TechniqueEnum</a></td>
+<td>cryo_em, xray_crystallography, saxs, sans, cryo_et</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/WorkflowTypeEnum">WorkflowTypeEnum</a></td>
+<td>motion_correction, ctf_estimation, refinement, model_building</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/PhasingMethodEnum">PhasingMethodEnum</a></td>
+<td>molecular_replacement, sad, mad, direct_methods</td>
+</tr>
+</tbody>
+</table>
+<h3 id="instruments-detectors">Instruments &amp; Detectors</h3>
+<table>
+<thead>
+<tr>
+<th>Enum</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/DetectorTypeEnum">DetectorTypeEnum</a></td>
+<td>direct_electron, ccd, cmos</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/XRaySourceTypeEnum">XRaySourceTypeEnum</a></td>
+<td>synchrotron, rotating_anode, sealed_tube</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/BeamlineEnum">BeamlineEnum</a></td>
+<td>ALS beamlines (8.2.1, 8.2.2, 8.3.1, 12.3.1, etc.)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-files">Data &amp; Files</h3>
+<table>
+<thead>
+<tr>
+<th>Enum</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/FileFormatEnum">FileFormatEnum</a></td>
+<td>mrc, pdb, mmcif, hdf5, tiff</td>
+</tr>
+<tr>
+<td><a href="https://w3id.org/aims-leaf/DataTypeEnum">DataTypeEnum</a></td>
+<td>micrograph, particles, volume, model</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-techniques">Supported Techniques</h2>
+<p>The schema supports a wide range of structural biology techniques:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Techniques</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Electron Microscopy</strong></td>
+<td>Cryo-EM single particle, cryo-ET, electron crystallography</td>
+</tr>
+<tr>
+<td><strong>X-ray Methods</strong></td>
+<td>Crystallography, SAXS, WAXS, XRF</td>
+</tr>
+<tr>
+<td><strong>Neutron Methods</strong></td>
+<td>SANS</td>
+</tr>
+<tr>
+<td><strong>Light Microscopy</strong></td>
+<td>Fluorescence, confocal, super-resolution</td>
+</tr>
+<tr>
+<td><strong>Spectroscopy</strong></td>
+<td>FTIR imaging, Raman</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-cryo-em-study">Example: Cryo-EM Study</h2>
+<pre><code class="language-yaml">id: dataset:cryo-em-example
+title: Structure of Human Ribosome
+studies:
+  - id: study:ribosome-cryo-em
+    title: Cryo-EM analysis of human ribosome
+samples:
+  - id: sample:ribosome-prep
+    sample_code: RIBO-2024-001
+    sample_type: complex
+    concentration:
+      numeric_value: 2.5
+      unit: mg/mL
+instruments:
+  - id: instrument:titan-krios
+    instrument_code: TITAN-KRIOS-1
+experiment_runs:
+  - id: exp:data-collection-1
+    experiment_code: RIBO-DC-001
+    technique: cryo_em
+workflow_runs:
+  - id: wf:reconstruction
+    workflow_code: RIBO-RECON-001
+    workflow_type: refinement
+    software_name: RELION
+# Association tables link entities
+experiment_sample_associations:
+  - experiment_id: exp:data-collection-1
+    sample_id: sample:ribosome-prep
+experiment_instrument_associations:
+  - experiment_id: exp:data-collection-1
+    instrument_id: instrument:titan-krios
+</code></pre>
+<h2 id="external-links">External Links</h2>
+<ul>
+<li><strong>Schema Repository</strong>: <a href="https://github.com/lambda-ber/aims-leaf">github.com/lambda-ber/aims-leaf</a></li>
+<li><strong>W3ID Namespace</strong>: <a href="https://w3id.org/aims-leaf/">w3id.org/aims-leaf</a></li>
+<li><strong>LinkML</strong>: <a href="https://linkml.io/">linkml.io</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

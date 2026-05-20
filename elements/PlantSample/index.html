@@ -1,0 +1,3144 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://lambda-ber.github.io/aims-leaf/elements/PlantSample/" rel="canonical"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.22" name="generator"/>
+<title>Class: PlantSample - aims-leaf</title>
+<link href="../../assets/stylesheets/main.84d31ad4.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="green" data-md-color-primary="amber" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#class-plantsample">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="aims-leaf" class="md-header__button md-logo" data-md-component="logo" href="../.." title="aims-leaf">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            aims-leaf
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Class: PlantSample
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="green" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="amber" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="green" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="amber" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/lambda-ber/aims-leaf" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="aims-leaf" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="aims-leaf">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+</a>
+    aims-leaf
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/lambda-ber/aims-leaf" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    Home
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    Schema
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Background
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Background
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/nexus/">
+<span class="md-ellipsis">
+    NEXUS
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/mmcif/">
+<span class="md-ellipsis">
+    mmCIF
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/empiar/">
+<span class="md-ellipsis">
+    EMPIAR
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/emdb/">
+<span class="md-ellipsis">
+    EMDB
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/dials/">
+<span class="md-ellipsis">
+    DIALS
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/sasdb/">
+<span class="md-ellipsis">
+    SASDB
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/rembi-alignment/">
+<span class="md-ellipsis">
+    REMBI
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/aims-leaf-data-lakehouse-strategy.md">
+<span class="md-ellipsis">
+    Data Lakehouse Strategy
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/ber-doe-facilities/">
+<span class="md-ellipsis">
+    Integration with BER
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../background/data-quality-challenges/">
+<span class="md-ellipsis">
+    Data Quality Challenges
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Examples
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../examples/simplescattering-glurs-analysis/">
+<span class="md-ellipsis">
+    Simple Scattering GluRS Dataset
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    Technical
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Technical
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../technical/ome-mapping/">
+<span class="md-ellipsis">
+    Mapping to OME
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Slides
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            Slides
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../slides/overview.html">
+<span class="md-ellipsis">
+    Overview
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../slides/technical-overview.html">
+<span class="md-ellipsis">
+    Technical Deep Dive
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inheritance">
+<span class="md-ellipsis">
+      Inheritance
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slots">
+<span class="md-ellipsis">
+      Slots
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#usages">
+<span class="md-ellipsis">
+      Usages
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#identifier-and-mapping-information">
+<span class="md-ellipsis">
+      Identifier and Mapping Information
+    </span>
+</a>
+<nav aria-label="Identifier and Mapping Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-source">
+<span class="md-ellipsis">
+      Schema Source
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+<span class="md-ellipsis">
+      Mappings
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkml-source">
+<span class="md-ellipsis">
+      LinkML Source
+    </span>
+</a>
+<nav aria-label="LinkML Source" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#direct">
+<span class="md-ellipsis">
+      Direct
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#induced">
+<span class="md-ellipsis">
+      Induced
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="class-plantsample">Class: PlantSample</h1>
+<p><em>Plant sample info for AIMS-LEAF</em></p>
+<p>URI: <a href="https://w3id.org/aims-leaf/PlantSample">aimsleaf:PlantSample</a></p>
+<div class="mermaid"> classDiagram
+    class PlantSample
+    click PlantSample href "../PlantSample/"
+      Sample &lt;|-- PlantSample
+        click Sample href "../Sample/"
+
+      PlantSample : air_temperature_regimen
+
+      PlantSample : anatomy
+
+
+
+
+
+        PlantSample --&gt; "0..1" OntologyTerm : anatomy
+        click OntologyTerm href "../OntologyTerm/"
+
+
+
+      PlantSample : ancestral_data
+
+      PlantSample : antibiotic_regimen
+
+      PlantSample : arabadopsis_phenotype_stage
+
+
+
+
+
+        PlantSample --&gt; "0..1" ArabadopsisStageEnum : arabadopsis_phenotype_stage
+        click ArabadopsisStageEnum href "../ArabadopsisStageEnum/"
+
+
+
+      PlantSample : biological_replicate_sample_group_name
+
+      PlantSample : biotic_regimen
+
+      PlantSample : broad_scale_environmental_context
+
+      PlantSample : buffer_composition
+
+
+
+
+
+        PlantSample --&gt; "0..1" BufferComposition : buffer_composition
+        click BufferComposition href "../BufferComposition/"
+
+
+
+      PlantSample : cell_type
+
+
+
+
+
+        PlantSample --&gt; "0..1" OntologyTerm : cell_type
+        click OntologyTerm href "../OntologyTerm/"
+
+
+
+      PlantSample : chemical_administration
+
+      PlantSample : chemical_mutagen
+
+      PlantSample : collection_date_time
+
+      PlantSample : combined_tissue_description
+
+      PlantSample : concentration
+
+
+
+
+
+        PlantSample --&gt; "0..1" QuantityValue : concentration
+        click QuantityValue href "../QuantityValue/"
+
+
+
+      PlantSample : depth_meters
+
+
+
+
+
+        PlantSample --&gt; "0..1" QuantityValue : depth_meters
+        click QuantityValue href "../QuantityValue/"
+
+
+
+      PlantSample : description
+
+      PlantSample : developmental_stage
+
+      PlantSample : elevation_meters
+
+
+
+
+
+        PlantSample --&gt; "0..1" QuantityValue : elevation_meters
+        click QuantityValue href "../QuantityValue/"
+
+
+
+      PlantSample : environmental_medium
+
+      PlantSample : estimated_genome_size_mb
+
+
+
+
+
+        PlantSample --&gt; "0..1" QuantityValue : estimated_genome_size_mb
+        click QuantityValue href "../QuantityValue/"
+
+
+
+      PlantSample : experimental_time_point_description
+
+      PlantSample : experimental_time_point_number
+
+      PlantSample : fertilizer_administration
+
+      PlantSample : fungicide_regimen
+
+      PlantSample : gaseous_environment
+
+      PlantSample : gc_content_percent
+
+
+
+
+
+        PlantSample --&gt; "0..1" QuantityValue : gc_content_percent
+        click QuantityValue href "../QuantityValue/"
+
+
+
+      PlantSample : genetic_modification
+
+      PlantSample : genus
+
+      PlantSample : germplasm_collection_id
+
+      PlantSample : growth_facility
+
+
+
+
+
+        PlantSample --&gt; "1" GrowthFacilityEnum : growth_facility
+        click GrowthFacilityEnum href "../GrowthFacilityEnum/"
+
+
+
+      PlantSample : growth_hormone_regimen
+
+      PlantSample : growth_medium
+
+      PlantSample : growth_medium_composition
+
+      PlantSample : herbicide_regimen
+
+      PlantSample : humidity_regimen
+
+      PlantSample : id
+
+      PlantSample : inoculation_method
+
+      PlantSample : insecticide_regimen
+
+      PlantSample : isolate
+
+      PlantSample : last_light_transition_type
+
+      PlantSample : latitude
+
+      PlantSample : light_regimen
+
+      PlantSample : local_environmental_context
+
+      PlantSample : longitude
+
+      PlantSample : mechanical_damage
+
+      PlantSample : molecular_weight
+
+
+
+
+
+        PlantSample --&gt; "0..1" QuantityValue : molecular_weight
+        click QuantityValue href "../QuantityValue/"
+
+
+
+      PlantSample : ncbi_taxonomy_id
+
+      PlantSample : observed_host_symbionts
+
+      PlantSample : organism
+
+
+
+
+
+        PlantSample --&gt; "0..1" OntologyTerm : organism
+        click OntologyTerm href "../OntologyTerm/"
+
+
+
+      PlantSample : other_treatment_regimen
+
+      PlantSample : parent_sample_id
+
+
+
+
+
+        PlantSample --&gt; "0..1" Sample : parent_sample_id
+        click Sample href "../Sample/"
+
+
+
+      PlantSample : perturbation
+
+      PlantSample : plant_age
+
+      PlantSample : plant_sex
+
+      PlantSample : ploidy
+
+
+
+
+
+        PlantSample --&gt; "0..1" PloidyTypeEnum : ploidy
+        click PloidyTypeEnum href "../PloidyTypeEnum/"
+
+
+
+      PlantSample : preparation_method
+
+      PlantSample : purity_percentage
+
+
+
+
+
+        PlantSample --&gt; "0..1" QuantityValue : purity_percentage
+        click QuantityValue href "../QuantityValue/"
+
+
+
+      PlantSample : quality_metrics
+
+      PlantSample : radiation_regimen
+
+      PlantSample : rainfall_regimen
+
+      PlantSample : reference_genome
+
+      PlantSample : region_locality
+
+      PlantSample : salt_regimen
+
+      PlantSample : sample_code
+
+      PlantSample : sample_disease_stage
+
+      PlantSample : sample_disease_staus
+
+      PlantSample : sample_size
+
+
+
+
+
+        PlantSample --&gt; "0..1" QuantityValue : sample_size
+        click QuantityValue href "../QuantityValue/"
+
+
+
+      PlantSample : sample_type
+
+
+
+
+
+        PlantSample --&gt; "1" SampleTypeEnum : sample_type
+        click SampleTypeEnum href "../SampleTypeEnum/"
+
+
+
+      PlantSample : species
+
+      PlantSample : storage_conditions
+
+
+
+
+
+        PlantSample --&gt; "0..1" StorageConditions : storage_conditions
+        click StorageConditions href "../StorageConditions/"
+
+
+
+      PlantSample : strain_variety_cultivar
+
+      PlantSample : temperature
+
+
+
+
+
+        PlantSample --&gt; "0..1" QuantityValue : temperature
+        click QuantityValue href "../QuantityValue/"
+
+
+
+      PlantSample : time_after_last_light_transition
+
+      PlantSample : time_post_inoculation
+
+      PlantSample : tissue
+
+      PlantSample : tissue_plant_ontology_term
+
+      PlantSample : title
+
+      PlantSample : watering_regimen
+
+
+</div>
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><a href="../NamedThing/">NamedThing</a><ul>
+<li><a href="../Sample/">Sample</a><ul>
+<li><strong>PlantSample</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../biological_replicate_sample_group_name/">biological_replicate_sample_group_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Samples that are biological replicates should have the same group name</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../combined_tissue_description/">combined_tissue_description</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The number and relationship between the tissues if multiple tissue samples we...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../experimental_time_point_number/">experimental_time_point_number</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>Integer number representing the sequential numbering of time points, applicab...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../experimental_time_point_description/">experimental_time_point_description</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Description of the time point sampled, applicable to samples that are part of...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../genus/">genus</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../species/">species</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
+<td></td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../strain_variety_cultivar/">strain_variety_cultivar</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Name or ID of the cultivar, variety, strain, or other similar designation of ...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../isolate/">isolate</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Isolate or mutant name</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../germplasm_collection_id/">germplasm_collection_id</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Culture collection name and ID from which the original plant germplasm was so...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ncbi_taxonomy_id/">ncbi_taxonomy_id</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>Unique identifier from the NCBI taxonomy database</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ancestral_data/">ancestral_data</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about either pedigree or other description of ancestral informati...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../genetic_modification/">genetic_modification</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Genetic modifications of the genome of an organism, which may occur naturally...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../estimated_genome_size_mb/">estimated_genome_size_mb</a></td>
+<td>0..1 <br/> <a href="../QuantityValue/">QuantityValue</a></td>
+<td>Estimated genome size of the primary species being sampled, between 1-100000</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../gc_content_percent/">gc_content_percent</a></td>
+<td>0..1 <br/> <a href="../QuantityValue/">QuantityValue</a></td>
+<td>Estimated GC content of the genome of the primary species being sampled, nume...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../ploidy/">ploidy</a></td>
+<td>0..1 <br/> <a href="../PloidyTypeEnum/">PloidyTypeEnum</a></td>
+<td>The ploidy level of the genome</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../reference_genome/">reference_genome</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Reference genome and annotation to be used for analysis</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../collection_date_time/">collection_date_time</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
+<td>The time of sampling, either as an instance (single point in time) or interva...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sample_size/">sample_size</a></td>
+<td>0..1 <br/> <a href="../QuantityValue/">QuantityValue</a></td>
+<td>The total amount or size (volume (ml), mass (g) or area (m2)) of sample colle...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tissue/">tissue</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
+<td>Detailed description of the organ or type of tissue sampled</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../tissue_plant_ontology_term/">tissue_plant_ontology_term</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Plant ontology term corresponding to plant structure sampled; see https://pla...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../region_locality/">region_locality</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The geographical origin of the sample as defined by the country or sea name f...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../latitude/">latitude</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td>The geographical origin of the sample as defined by latitude</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../longitude/">longitude</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td>The geographical origin of the sample as defined by longitude</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../depth_meters/">depth_meters</a></td>
+<td>0..1 <br/> <a href="../QuantityValue/">QuantityValue</a></td>
+<td>The vertical distance (in meters) below local surface</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../elevation_meters/">elevation_meters</a></td>
+<td>0..1 <br/> <a href="../QuantityValue/">QuantityValue</a></td>
+<td>Elevation (in meters) of the sampling site as measured by the vertical distan...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../temperature/">temperature</a></td>
+<td>0..1 <br/> <a href="../QuantityValue/">QuantityValue</a></td>
+<td>Temperature (in degrees Celsius) of the sample at time of sampling</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../broad_scale_environmental_context/">broad_scale_environmental_context</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The major environmental system the sample or specimen came from</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../local_environmental_context/">local_environmental_context</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The entity or entities which are in the sample or specimen's local vicinity a...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../environmental_medium/">environmental_medium</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The environmental material(s) immediately surrounding the sample or specimen ...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../growth_facility/">growth_facility</a></td>
+<td>1 <br/> <a href="../GrowthFacilityEnum/">GrowthFacilityEnum</a></td>
+<td>Type of facility where the sampled plant was grown</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../growth_medium/">growth_medium</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
+<td>General specification of the media for growing the plants or tissue cultured ...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../growth_medium_composition/">growth_medium_composition</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Detailed description of the makeup of the plant growth medium</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../plant_age/">plant_age</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The age of the plant from which the tissue was sampled</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../developmental_stage/">developmental_stage</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
+<td>The developmental stage of the plant from which the tissue was sampled</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../arabadopsis_phenotype_stage/">arabadopsis_phenotype_stage</a></td>
+<td>0..1 <br/> <a href="../ArabadopsisStageEnum/">ArabadopsisStageEnum</a></td>
+<td>Stage that takes into account effect of genotype &amp; environment effects</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../air_temperature_regimen/">air_temperature_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving an exposure to varying temperatures</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../antibiotic_regimen/">antibiotic_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving antibiotic administration</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../biotic_regimen/">biotic_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of biotic factors, such as bacteria...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../inoculation_method/">inoculation_method</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Method and material used for inoculation or infiltration with a biotic agent</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../time_post_inoculation/">time_post_inoculation</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The time between inoculation with the biotic agent and sample collection, spe...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../chemical_administration/">chemical_administration</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>List of chemical compounds administered to the host or site where sampling oc...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../chemical_mutagen/">chemical_mutagen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Treatment involving use of mutagens</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../fertilizer_administration/">fertilizer_administration</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Detailed description of fertilizer application</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../insecticide_regimen/">insecticide_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of insecticides</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../fungicide_regimen/">fungicide_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of fungicides</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../gaseous_environment/">gaseous_environment</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Use of conditions with differing gaseous environments</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../growth_hormone_regimen/">growth_hormone_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of growth hormones</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../herbicide_regimen/">herbicide_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of herbicides</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../humidity_regimen/">humidity_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving an exposure to varying degree of humidi...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../radiation_regimen/">radiation_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving exposure of plant or a plant part to a ...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../light_regimen/">light_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving an exposure to light, including intensi...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../last_light_transition_type/">last_light_transition_type</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The most recent light transition before sampling</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../time_after_last_light_transition/">time_after_last_light_transition</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The time between sampling and the most recent light transition, specified as ...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../salt_regimen/">salt_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of salts as supplement to liquid an...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../rainfall_regimen/">rainfall_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving an exposure to a given amount of rainfa...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../watering_regimen/">watering_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving an exposure to watering frequencies</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../other_treatment_regimen/">other_treatment_regimen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Use this field to provide information about treatments that are not captured ...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../perturbation/">perturbation</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Type of perturbation, e</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../mechanical_damage/">mechanical_damage</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about any mechanical damage exerted on the plant</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../observed_host_symbionts/">observed_host_symbionts</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The taxonomic name of the organism(s) found living in mutualistic, commensali...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../plant_sex/">plant_sex</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Sex of the reproductive parts on the whole plant, e</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sample_disease_staus/">sample_disease_staus</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>List of diseases with which the subject has been diagnosed at the time of sam...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sample_disease_stage/">sample_disease_stage</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Stage of the disease at the time of sample collection, e</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../sample_code/">sample_code</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
+<td>Human-friendly laboratory identifier or facility code for the sample (e</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../sample_type/">sample_type</a></td>
+<td>1 <br/> <a href="../SampleTypeEnum/">SampleTypeEnum</a></td>
+<td>Type of biological sample</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../molecular_weight/">molecular_weight</a></td>
+<td>0..1 <br/> <a href="../QuantityValue/">QuantityValue</a></td>
+<td>Molecular weight, typically specified in kilodaltons (kDa)</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../concentration/">concentration</a></td>
+<td>0..1 <br/> <a href="../QuantityValue/">QuantityValue</a></td>
+<td>Sample concentration, typically specified in mg/mL or µM</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../buffer_composition/">buffer_composition</a></td>
+<td>0..1 <br/> <a href="../BufferComposition/">BufferComposition</a></td>
+<td>Buffer composition including pH, salts, additives</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../preparation_method/">preparation_method</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Method used to prepare the sample</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../storage_conditions/">storage_conditions</a></td>
+<td>0..1 <br/> <a href="../StorageConditions/">StorageConditions</a></td>
+<td>Storage conditions for the sample</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../organism/">organism</a></td>
+<td>0..1 <br/> <a href="../OntologyTerm/">OntologyTerm</a></td>
+<td>Source organism for the sample (e</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../anatomy/">anatomy</a></td>
+<td>0..1 <br/> <a href="../OntologyTerm/">OntologyTerm</a></td>
+<td>Anatomical part or tissue (e</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../cell_type/">cell_type</a></td>
+<td>0..1 <br/> <a href="../OntologyTerm/">OntologyTerm</a></td>
+<td>Cell type if applicable (e</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../parent_sample_id/">parent_sample_id</a></td>
+<td>0..1 <br/> <a href="../Sample/">Sample</a></td>
+<td>Reference to parent sample for derivation tracking</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../purity_percentage/">purity_percentage</a></td>
+<td>0..1 <br/> <a href="../QuantityValue/">QuantityValue</a></td>
+<td>Sample purity, typically specified as a percentage (range: 0-100)</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../quality_metrics/">quality_metrics</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Quality control metrics for the sample</td>
+<td><a href="../Sample/">Sample</a></td>
+</tr>
+<tr>
+<td><a href="../id/">id</a></td>
+<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>Globally unique identifier as an IRI or CURIE for machine processing and exte...</td>
+<td><a href="../NamedThing/">NamedThing</a></td>
+</tr>
+<tr>
+<td><a href="../title/">title</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>A human-readable name or title for this entity</td>
+<td><a href="../NamedThing/">NamedThing</a></td>
+</tr>
+<tr>
+<td><a href="../description/">description</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>A detailed textual description of this entity</td>
+<td><a href="../NamedThing/">NamedThing</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="usages">Usages</h2>
+<table>
+<thead>
+<tr>
+<th>used by</th>
+<th>used in</th>
+<th>type</th>
+<th>used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../Dataset/">Dataset</a></td>
+<td><a href="../plantsamples/">plantsamples</a></td>
+<td>range</td>
+<td><a href="./">PlantSample</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/aims-leaf/</li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>aimsleaf:PlantSample</td>
+</tr>
+<tr>
+<td>native</td>
+<td>aimsleaf:PlantSample</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+<h3 id="direct">Direct</h3>
+<details>
+<pre><code class="language-yaml">name: PlantSample
+description: Plant sample info for AIMS-LEAF
+from_schema: https://w3id.org/aims-leaf/
+is_a: Sample
+attributes:
+  biological_replicate_sample_group_name:
+    name: biological_replicate_sample_group_name
+    description: Samples that are biological replicates should have the same group
+      name
+    comments:
+    - sbicolor_3d_root
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  combined_tissue_description:
+    name: combined_tissue_description
+    description: The number and relationship between the tissues if multiple tissue
+      samples were combined into a single container
+    comments:
+    - 6 lateral root tips from each of two plants
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  experimental_time_point_number:
+    name: experimental_time_point_number
+    description: Integer number representing the sequential numbering of time points,
+      applicable to samples that are part of time course experiments
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: integer
+    required: false
+  experimental_time_point_description:
+    name: experimental_time_point_description
+    description: Description of the time point sampled, applicable to samples that
+      are part of time course experiments
+    comments:
+    - 3 days post germination
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  genus:
+    name: genus
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  species:
+    name: species
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  strain_variety_cultivar:
+    name: strain_variety_cultivar
+    description: Name or ID of the cultivar, variety, strain, or other similar designation
+      of the primary organism being sampled
+    comments:
+    - RTx430
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  isolate:
+    name: isolate
+    description: Isolate or mutant name
+    comments:
+    - Sb_Mut1
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  germplasm_collection_id:
+    name: germplasm_collection_id
+    description: Culture collection name and ID from which the original plant germplasm
+      was sourced
+    comments:
+    - ABRC CS22561
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  ncbi_taxonomy_id:
+    name: ncbi_taxonomy_id
+    description: Unique identifier from the NCBI taxonomy database
+    comments:
+    - '4558'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: integer
+    required: false
+  ancestral_data:
+    name: ancestral_data
+    description: Information about either pedigree or other description of ancestral
+      information
+    comments:
+    - Hybrid of A x B lines
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  genetic_modification:
+    name: genetic_modification
+    description: Genetic modifications of the genome of an organism, which may occur
+      naturally by spontaneous mutation, or be introduced by some experimental means
+    comments:
+    - mlo-11 allele
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  estimated_genome_size_mb:
+    name: estimated_genome_size_mb
+    description: Estimated genome size of the primary species being sampled, between
+      1-100000
+    comments:
+    - 730 Mb
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: QuantityValue
+    inlined: true
+  gc_content_percent:
+    name: gc_content_percent
+    description: Estimated GC content of the genome of the primary species being sampled,
+      numeric only
+    comments:
+    - 45 %
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: QuantityValue
+    inlined: true
+  ploidy:
+    name: ploidy
+    description: The ploidy level of the genome. For terms, please select terms listed
+      under class ploidy (PATO:001374) of Phenotypic Quality Ontology
+    comments:
+    - diploid
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: PloidyTypeEnum
+    required: false
+  reference_genome:
+    name: reference_genome
+    description: Reference genome and annotation to be used for analysis
+    comments:
+    - Phytozome Sorghum bicolor RTx430 v2.1
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  collection_date_time:
+    name: collection_date_time
+    description: The time of sampling, either as an instance (single point in time)
+      or interval. All valid ISO8601 formats are acceptable
+    comments:
+    - '2025-08-10T14:00:00-07:00'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  sample_size:
+    name: sample_size
+    description: The total amount or size (volume (ml), mass (g) or area (m2)) of
+      sample collected. Separate the number and unit by a single space
+    comments:
+    - 0.45 g
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: QuantityValue
+    required: false
+    inlined: true
+  tissue:
+    name: tissue
+    description: Detailed description of the organ or type of tissue sampled
+    comments:
+    - 5 mm lateral root tips
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  tissue_plant_ontology_term:
+    name: tissue_plant_ontology_term
+    description: Plant ontology term corresponding to plant structure sampled; see
+      https://planteome.org. May include multiple terms separated by semicolons
+    comments:
+    - seedling cotyledon (PO:0025471); seedling hypocotyl (PO:0025291)
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  region_locality:
+    name: region_locality
+    description: The geographical origin of the sample as defined by the country or
+      sea name followed by specific region name
+    comments:
+    - 'USA: California, Berkeley'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  latitude:
+    name: latitude
+    description: The geographical origin of the sample as defined by latitude. The
+      value should be reported in decimal degrees, limited to 8 decimal points, and
+      in WGS84 system
+    comments:
+    - '37.877184'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: float
+    required: false
+  longitude:
+    name: longitude
+    description: The geographical origin of the sample as defined by longitude. The
+      value should be reported in decimal degrees, limited to 8 decimal points, and
+      in WGS84 system
+    comments:
+    - '-122.250841'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: float
+    required: false
+  depth_meters:
+    name: depth_meters
+    description: The vertical distance (in meters) below local surface
+    comments:
+    - 0.1 m
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: QuantityValue
+    required: false
+    inlined: true
+  elevation_meters:
+    name: elevation_meters
+    description: Elevation (in meters) of the sampling site as measured by the vertical
+      distance from mean sea level
+    comments:
+    - 120 m
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: QuantityValue
+    required: false
+    inlined: true
+  temperature:
+    name: temperature
+    description: Temperature (in degrees Celsius) of the sample at time of sampling
+    comments:
+    - 22 C
+    from_schema: https://w3id.org/aims-leaf/plant/
+    domain_of:
+    - StorageConditions
+    - ExperimentalConditions
+    - MeasurementConditions
+    - PlantSample
+    range: QuantityValue
+    inlined: true
+  broad_scale_environmental_context:
+    name: broad_scale_environmental_context
+    description: The major environmental system the sample or specimen came from.
+      The system(s) identified should have a coarse spatial grain
+    comments:
+    - rangeland biome [ENVO:01000247]
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+    pattern: .*\[ENVO:\d+\]$
+  local_environmental_context:
+    name: local_environmental_context
+    description: The entity or entities which are in the sample or specimen's local
+      vicinity and which you believe have significant causal influences on your sample
+      or specimen
+    comments:
+    - hillside [ENVO:01000333]
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+    pattern: .*\[ENVO:\d+\]$
+  environmental_medium:
+    name: environmental_medium
+    description: The environmental material(s) immediately surrounding the sample
+      or specimen at the time of sampling
+    comments:
+    - bluegrass field soil [ENVO:00005789]
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+    pattern: .*\[ENVO:\d+\]$
+  growth_facility:
+    name: growth_facility
+    description: Type of facility where the sampled plant was grown
+    comments:
+    - greenhouse
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: GrowthFacilityEnum
+    required: true
+  growth_medium:
+    name: growth_medium
+    description: General specification of the media for growing the plants or tissue
+      cultured samples
+    comments:
+    - soil
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  growth_medium_composition:
+    name: growth_medium_composition
+    description: Detailed description of the makeup of the plant growth medium
+    comments:
+    - 2:1:1 mix of coco coir, sand, and vermiculite
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  plant_age:
+    name: plant_age
+    description: The age of the plant from which the tissue was sampled
+    comments:
+    - 3 days post germination
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  developmental_stage:
+    name: developmental_stage
+    description: The developmental stage of the plant from which the tissue was sampled
+    comments:
+    - seedling
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  arabadopsis_phenotype_stage:
+    name: arabadopsis_phenotype_stage
+    description: 'Stage that takes into account effect of genotype &amp; environment effects.
+      Requires in depth knowledge about features of model organism doi: 10.1105/TPC.010011'
+    comments:
+    - Stage 1.04
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: ArabadopsisStageEnum
+    required: false
+  air_temperature_regimen:
+    name: air_temperature_regimen
+    description: Information about treatment involving an exposure to varying temperatures
+    comments:
+    - 22°C 12h day / 18°C 12h night
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  antibiotic_regimen:
+    name: antibiotic_regimen
+    description: Information about treatment involving antibiotic administration
+    comments:
+    - kanamycin 50 ug/mL added to agar plates for the full duration of growth
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  biotic_regimen:
+    name: biotic_regimen
+    description: Information about treatment involving use of biotic factors, such
+      as bacteria, viruses, or fungi
+    comments:
+    - Agrobacterium tumefaciens GV3101 infiltration
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  inoculation_method:
+    name: inoculation_method
+    description: Method and material used for inoculation or infiltration with a biotic
+      agent
+    comments:
+    - syringe infiltration with GV3101 (OD600=0.5) carrying pCAMBIA1300-35S::GFP
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  time_post_inoculation:
+    name: time_post_inoculation
+    description: The time between inoculation with the biotic agent and sample collection,
+      specified as days:hours:minutes
+    comments:
+    - '2:12:00'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  chemical_administration:
+    name: chemical_administration
+    description: List of chemical compounds administered to the host or site where
+      sampling occurred, and when
+    comments:
+    - 50 mM KNO3 fertilizer, weekly
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  chemical_mutagen:
+    name: chemical_mutagen
+    description: Treatment involving use of mutagens
+    comments:
+    - seeds soaked in EMS, 0.1%, 6h exposure before planting
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  fertilizer_administration:
+    name: fertilizer_administration
+    description: Detailed description of fertilizer application
+    comments:
+    - 0.5x Hoagland's solution, weekly
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  insecticide_regimen:
+    name: insecticide_regimen
+    description: Information about treatment involving use of insecticides
+    comments:
+    - imidacloprid, 0.5 mg/L, soil drench at time of planting
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  fungicide_regimen:
+    name: fungicide_regimen
+    description: Information about treatment involving use of fungicides
+    comments:
+    - azoxystrobin, 100 ppm, foliar spray once at weeks 2, 3, and 4
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  gaseous_environment:
+    name: gaseous_environment
+    description: Use of conditions with differing gaseous environments
+    comments:
+    - elevated CO2, 600 ppm, continuous
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  growth_hormone_regimen:
+    name: growth_hormone_regimen
+    description: Information about treatment involving use of growth hormones
+    comments:
+    - IAA 1 µM for 24h at 6 days old, followed by transfer to control condition without
+      hormone for 48h before sampling
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  herbicide_regimen:
+    name: herbicide_regimen
+    description: Information about treatment involving use of herbicides
+    comments:
+    - glyphosate 10 µM, foliar spray, once at 2 weeks
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  humidity_regimen:
+    name: humidity_regimen
+    description: Information about treatment involving an exposure to varying degree
+      of humidity
+    comments:
+    - 65% RH, constant
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  radiation_regimen:
+    name: radiation_regimen
+    description: Information about treatment involving exposure of plant or a plant
+      part to a particular radiation regimen
+    comments:
+    - UV-B 1.5 W/m2, 2h/day, for 5 days starting at day 7
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  light_regimen:
+    name: light_regimen
+    description: Information about treatment involving an exposure to light, including
+      intensity, timing, and quality
+    comments:
+    - 150 µmol m-2 s-1, 16h light / 8h dark
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  last_light_transition_type:
+    name: last_light_transition_type
+    description: The most recent light transition before sampling
+    comments:
+    - lights on
+    - eg, lights_on, lights_off, sunrise, sunset
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  time_after_last_light_transition:
+    name: time_after_last_light_transition
+    description: The time between sampling and the most recent light transition, specified
+      as hours:minutes
+    comments:
+    - '2:00'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  salt_regimen:
+    name: salt_regimen
+    description: Information about treatment involving use of salts as supplement
+      to liquid and soil growth media
+    comments:
+    - NaCl 100 mM added to hydroponic medium at day 3, followed by transfer to fresh
+      hydroponic medium without elevated NaCl for 3 days before sampling
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  rainfall_regimen:
+    name: rainfall_regimen
+    description: Information about treatment involving an exposure to a given amount
+      of rainfall
+    comments:
+    - 30cm of rainfall during growing season
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  watering_regimen:
+    name: watering_regimen
+    description: Information about treatment involving an exposure to watering frequencies
+    comments:
+    - 100 ml per pot every 3 days
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  other_treatment_regimen:
+    name: other_treatment_regimen
+    description: Use this field to provide information about treatments that are not
+      captured accurately by any of the other available treatment categories
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  perturbation:
+    name: perturbation
+    description: Type of perturbation, e.g. chemical administration, physical disturbance,
+      etc., coupled with perturbation regimen
+    comments:
+    - drought stress beginning at 8 weeks for a period of 4 weeks
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  mechanical_damage:
+    name: mechanical_damage
+    description: Information about any mechanical damage exerted on the plant
+    comments:
+    - root wounding, 24h before sampling
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  observed_host_symbionts:
+    name: observed_host_symbionts
+    description: The taxonomic name of the organism(s) found living in mutualistic,
+      commensalistic, or parasitic symbiosis with the specific host.
+    comments:
+    - arbuscular mycorrhizal fungi
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  plant_sex:
+    name: plant_sex
+    description: Sex of the reproductive parts on the whole plant, e.g. pistillate,
+      staminate, monoecious, hermaphrodite
+    comments:
+    - hermaphrodite
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  sample_disease_staus:
+    name: sample_disease_staus
+    description: List of diseases with which the subject has been diagnosed at the
+      time of sample collection; can include multiple diagnoses; e.g. Late wilt (Cephalosporium
+      maydis)
+    comments:
+    - infection with Pseudomonas syringae pv. tomato DC3000
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  sample_disease_stage:
+    name: sample_disease_stage
+    description: Stage of the disease at the time of sample collection, e.g. inoculation,
+      penetration, infection, growth and reproduction, dissemination of pathogen
+    comments:
+    - infection
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+
+</code></pre>
+</details>
+<h3 id="induced">Induced</h3>
+<details>
+<pre><code class="language-yaml">name: PlantSample
+description: Plant sample info for AIMS-LEAF
+from_schema: https://w3id.org/aims-leaf/
+is_a: Sample
+attributes:
+  biological_replicate_sample_group_name:
+    name: biological_replicate_sample_group_name
+    description: Samples that are biological replicates should have the same group
+      name
+    comments:
+    - sbicolor_3d_root
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: biological_replicate_sample_group_name
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  combined_tissue_description:
+    name: combined_tissue_description
+    description: The number and relationship between the tissues if multiple tissue
+      samples were combined into a single container
+    comments:
+    - 6 lateral root tips from each of two plants
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: combined_tissue_description
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  experimental_time_point_number:
+    name: experimental_time_point_number
+    description: Integer number representing the sequential numbering of time points,
+      applicable to samples that are part of time course experiments
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: experimental_time_point_number
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: integer
+    required: false
+  experimental_time_point_description:
+    name: experimental_time_point_description
+    description: Description of the time point sampled, applicable to samples that
+      are part of time course experiments
+    comments:
+    - 3 days post germination
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: experimental_time_point_description
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  genus:
+    name: genus
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: genus
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  species:
+    name: species
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: species
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  strain_variety_cultivar:
+    name: strain_variety_cultivar
+    description: Name or ID of the cultivar, variety, strain, or other similar designation
+      of the primary organism being sampled
+    comments:
+    - RTx430
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: strain_variety_cultivar
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  isolate:
+    name: isolate
+    description: Isolate or mutant name
+    comments:
+    - Sb_Mut1
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: isolate
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  germplasm_collection_id:
+    name: germplasm_collection_id
+    description: Culture collection name and ID from which the original plant germplasm
+      was sourced
+    comments:
+    - ABRC CS22561
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: germplasm_collection_id
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  ncbi_taxonomy_id:
+    name: ncbi_taxonomy_id
+    description: Unique identifier from the NCBI taxonomy database
+    comments:
+    - '4558'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: ncbi_taxonomy_id
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: integer
+    required: false
+  ancestral_data:
+    name: ancestral_data
+    description: Information about either pedigree or other description of ancestral
+      information
+    comments:
+    - Hybrid of A x B lines
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: ancestral_data
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  genetic_modification:
+    name: genetic_modification
+    description: Genetic modifications of the genome of an organism, which may occur
+      naturally by spontaneous mutation, or be introduced by some experimental means
+    comments:
+    - mlo-11 allele
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: genetic_modification
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  estimated_genome_size_mb:
+    name: estimated_genome_size_mb
+    description: Estimated genome size of the primary species being sampled, between
+      1-100000
+    comments:
+    - 730 Mb
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: estimated_genome_size_mb
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: QuantityValue
+    inlined: true
+  gc_content_percent:
+    name: gc_content_percent
+    description: Estimated GC content of the genome of the primary species being sampled,
+      numeric only
+    comments:
+    - 45 %
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: gc_content_percent
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: QuantityValue
+    inlined: true
+  ploidy:
+    name: ploidy
+    description: The ploidy level of the genome. For terms, please select terms listed
+      under class ploidy (PATO:001374) of Phenotypic Quality Ontology
+    comments:
+    - diploid
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: ploidy
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: PloidyTypeEnum
+    required: false
+  reference_genome:
+    name: reference_genome
+    description: Reference genome and annotation to be used for analysis
+    comments:
+    - Phytozome Sorghum bicolor RTx430 v2.1
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: reference_genome
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  collection_date_time:
+    name: collection_date_time
+    description: The time of sampling, either as an instance (single point in time)
+      or interval. All valid ISO8601 formats are acceptable
+    comments:
+    - '2025-08-10T14:00:00-07:00'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: collection_date_time
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  sample_size:
+    name: sample_size
+    description: The total amount or size (volume (ml), mass (g) or area (m2)) of
+      sample collected. Separate the number and unit by a single space
+    comments:
+    - 0.45 g
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: sample_size
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: QuantityValue
+    required: false
+    inlined: true
+  tissue:
+    name: tissue
+    description: Detailed description of the organ or type of tissue sampled
+    comments:
+    - 5 mm lateral root tips
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: tissue
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  tissue_plant_ontology_term:
+    name: tissue_plant_ontology_term
+    description: Plant ontology term corresponding to plant structure sampled; see
+      https://planteome.org. May include multiple terms separated by semicolons
+    comments:
+    - seedling cotyledon (PO:0025471); seedling hypocotyl (PO:0025291)
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: tissue_plant_ontology_term
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  region_locality:
+    name: region_locality
+    description: The geographical origin of the sample as defined by the country or
+      sea name followed by specific region name
+    comments:
+    - 'USA: California, Berkeley'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: region_locality
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  latitude:
+    name: latitude
+    description: The geographical origin of the sample as defined by latitude. The
+      value should be reported in decimal degrees, limited to 8 decimal points, and
+      in WGS84 system
+    comments:
+    - '37.877184'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: latitude
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: float
+    required: false
+  longitude:
+    name: longitude
+    description: The geographical origin of the sample as defined by longitude. The
+      value should be reported in decimal degrees, limited to 8 decimal points, and
+      in WGS84 system
+    comments:
+    - '-122.250841'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: longitude
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: float
+    required: false
+  depth_meters:
+    name: depth_meters
+    description: The vertical distance (in meters) below local surface
+    comments:
+    - 0.1 m
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: depth_meters
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: QuantityValue
+    required: false
+    inlined: true
+  elevation_meters:
+    name: elevation_meters
+    description: Elevation (in meters) of the sampling site as measured by the vertical
+      distance from mean sea level
+    comments:
+    - 120 m
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: elevation_meters
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: QuantityValue
+    required: false
+    inlined: true
+  temperature:
+    name: temperature
+    description: Temperature (in degrees Celsius) of the sample at time of sampling
+    comments:
+    - 22 C
+    from_schema: https://w3id.org/aims-leaf/plant/
+    alias: temperature
+    owner: PlantSample
+    domain_of:
+    - StorageConditions
+    - ExperimentalConditions
+    - MeasurementConditions
+    - PlantSample
+    range: QuantityValue
+    inlined: true
+  broad_scale_environmental_context:
+    name: broad_scale_environmental_context
+    description: The major environmental system the sample or specimen came from.
+      The system(s) identified should have a coarse spatial grain
+    comments:
+    - rangeland biome [ENVO:01000247]
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: broad_scale_environmental_context
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+    pattern: .*\[ENVO:\d+\]$
+  local_environmental_context:
+    name: local_environmental_context
+    description: The entity or entities which are in the sample or specimen's local
+      vicinity and which you believe have significant causal influences on your sample
+      or specimen
+    comments:
+    - hillside [ENVO:01000333]
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: local_environmental_context
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+    pattern: .*\[ENVO:\d+\]$
+  environmental_medium:
+    name: environmental_medium
+    description: The environmental material(s) immediately surrounding the sample
+      or specimen at the time of sampling
+    comments:
+    - bluegrass field soil [ENVO:00005789]
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: environmental_medium
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+    pattern: .*\[ENVO:\d+\]$
+  growth_facility:
+    name: growth_facility
+    description: Type of facility where the sampled plant was grown
+    comments:
+    - greenhouse
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: growth_facility
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: GrowthFacilityEnum
+    required: true
+  growth_medium:
+    name: growth_medium
+    description: General specification of the media for growing the plants or tissue
+      cultured samples
+    comments:
+    - soil
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: growth_medium
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  growth_medium_composition:
+    name: growth_medium_composition
+    description: Detailed description of the makeup of the plant growth medium
+    comments:
+    - 2:1:1 mix of coco coir, sand, and vermiculite
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: growth_medium_composition
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  plant_age:
+    name: plant_age
+    description: The age of the plant from which the tissue was sampled
+    comments:
+    - 3 days post germination
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: plant_age
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  developmental_stage:
+    name: developmental_stage
+    description: The developmental stage of the plant from which the tissue was sampled
+    comments:
+    - seedling
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: developmental_stage
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: true
+  arabadopsis_phenotype_stage:
+    name: arabadopsis_phenotype_stage
+    description: 'Stage that takes into account effect of genotype &amp; environment effects.
+      Requires in depth knowledge about features of model organism doi: 10.1105/TPC.010011'
+    comments:
+    - Stage 1.04
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: arabadopsis_phenotype_stage
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: ArabadopsisStageEnum
+    required: false
+  air_temperature_regimen:
+    name: air_temperature_regimen
+    description: Information about treatment involving an exposure to varying temperatures
+    comments:
+    - 22°C 12h day / 18°C 12h night
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: air_temperature_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  antibiotic_regimen:
+    name: antibiotic_regimen
+    description: Information about treatment involving antibiotic administration
+    comments:
+    - kanamycin 50 ug/mL added to agar plates for the full duration of growth
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: antibiotic_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  biotic_regimen:
+    name: biotic_regimen
+    description: Information about treatment involving use of biotic factors, such
+      as bacteria, viruses, or fungi
+    comments:
+    - Agrobacterium tumefaciens GV3101 infiltration
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: biotic_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  inoculation_method:
+    name: inoculation_method
+    description: Method and material used for inoculation or infiltration with a biotic
+      agent
+    comments:
+    - syringe infiltration with GV3101 (OD600=0.5) carrying pCAMBIA1300-35S::GFP
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: inoculation_method
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  time_post_inoculation:
+    name: time_post_inoculation
+    description: The time between inoculation with the biotic agent and sample collection,
+      specified as days:hours:minutes
+    comments:
+    - '2:12:00'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: time_post_inoculation
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  chemical_administration:
+    name: chemical_administration
+    description: List of chemical compounds administered to the host or site where
+      sampling occurred, and when
+    comments:
+    - 50 mM KNO3 fertilizer, weekly
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: chemical_administration
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  chemical_mutagen:
+    name: chemical_mutagen
+    description: Treatment involving use of mutagens
+    comments:
+    - seeds soaked in EMS, 0.1%, 6h exposure before planting
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: chemical_mutagen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  fertilizer_administration:
+    name: fertilizer_administration
+    description: Detailed description of fertilizer application
+    comments:
+    - 0.5x Hoagland's solution, weekly
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: fertilizer_administration
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  insecticide_regimen:
+    name: insecticide_regimen
+    description: Information about treatment involving use of insecticides
+    comments:
+    - imidacloprid, 0.5 mg/L, soil drench at time of planting
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: insecticide_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  fungicide_regimen:
+    name: fungicide_regimen
+    description: Information about treatment involving use of fungicides
+    comments:
+    - azoxystrobin, 100 ppm, foliar spray once at weeks 2, 3, and 4
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: fungicide_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  gaseous_environment:
+    name: gaseous_environment
+    description: Use of conditions with differing gaseous environments
+    comments:
+    - elevated CO2, 600 ppm, continuous
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: gaseous_environment
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  growth_hormone_regimen:
+    name: growth_hormone_regimen
+    description: Information about treatment involving use of growth hormones
+    comments:
+    - IAA 1 µM for 24h at 6 days old, followed by transfer to control condition without
+      hormone for 48h before sampling
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: growth_hormone_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  herbicide_regimen:
+    name: herbicide_regimen
+    description: Information about treatment involving use of herbicides
+    comments:
+    - glyphosate 10 µM, foliar spray, once at 2 weeks
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: herbicide_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  humidity_regimen:
+    name: humidity_regimen
+    description: Information about treatment involving an exposure to varying degree
+      of humidity
+    comments:
+    - 65% RH, constant
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: humidity_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  radiation_regimen:
+    name: radiation_regimen
+    description: Information about treatment involving exposure of plant or a plant
+      part to a particular radiation regimen
+    comments:
+    - UV-B 1.5 W/m2, 2h/day, for 5 days starting at day 7
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: radiation_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  light_regimen:
+    name: light_regimen
+    description: Information about treatment involving an exposure to light, including
+      intensity, timing, and quality
+    comments:
+    - 150 µmol m-2 s-1, 16h light / 8h dark
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: light_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  last_light_transition_type:
+    name: last_light_transition_type
+    description: The most recent light transition before sampling
+    comments:
+    - lights on
+    - eg, lights_on, lights_off, sunrise, sunset
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: last_light_transition_type
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  time_after_last_light_transition:
+    name: time_after_last_light_transition
+    description: The time between sampling and the most recent light transition, specified
+      as hours:minutes
+    comments:
+    - '2:00'
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: time_after_last_light_transition
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  salt_regimen:
+    name: salt_regimen
+    description: Information about treatment involving use of salts as supplement
+      to liquid and soil growth media
+    comments:
+    - NaCl 100 mM added to hydroponic medium at day 3, followed by transfer to fresh
+      hydroponic medium without elevated NaCl for 3 days before sampling
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: salt_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  rainfall_regimen:
+    name: rainfall_regimen
+    description: Information about treatment involving an exposure to a given amount
+      of rainfall
+    comments:
+    - 30cm of rainfall during growing season
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: rainfall_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  watering_regimen:
+    name: watering_regimen
+    description: Information about treatment involving an exposure to watering frequencies
+    comments:
+    - 100 ml per pot every 3 days
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: watering_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  other_treatment_regimen:
+    name: other_treatment_regimen
+    description: Use this field to provide information about treatments that are not
+      captured accurately by any of the other available treatment categories
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: other_treatment_regimen
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  perturbation:
+    name: perturbation
+    description: Type of perturbation, e.g. chemical administration, physical disturbance,
+      etc., coupled with perturbation regimen
+    comments:
+    - drought stress beginning at 8 weeks for a period of 4 weeks
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: perturbation
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  mechanical_damage:
+    name: mechanical_damage
+    description: Information about any mechanical damage exerted on the plant
+    comments:
+    - root wounding, 24h before sampling
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: mechanical_damage
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  observed_host_symbionts:
+    name: observed_host_symbionts
+    description: The taxonomic name of the organism(s) found living in mutualistic,
+      commensalistic, or parasitic symbiosis with the specific host.
+    comments:
+    - arbuscular mycorrhizal fungi
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: observed_host_symbionts
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  plant_sex:
+    name: plant_sex
+    description: Sex of the reproductive parts on the whole plant, e.g. pistillate,
+      staminate, monoecious, hermaphrodite
+    comments:
+    - hermaphrodite
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: plant_sex
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  sample_disease_staus:
+    name: sample_disease_staus
+    description: List of diseases with which the subject has been diagnosed at the
+      time of sample collection; can include multiple diagnoses; e.g. Late wilt (Cephalosporium
+      maydis)
+    comments:
+    - infection with Pseudomonas syringae pv. tomato DC3000
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: sample_disease_staus
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  sample_disease_stage:
+    name: sample_disease_stage
+    description: Stage of the disease at the time of sample collection, e.g. inoculation,
+      penetration, infection, growth and reproduction, dissemination of pathogen
+    comments:
+    - infection
+    from_schema: https://w3id.org/aims-leaf/plant/
+    rank: 1000
+    alias: sample_disease_stage
+    owner: PlantSample
+    domain_of:
+    - PlantSample
+    range: string
+    required: false
+  sample_code:
+    name: sample_code
+    description: Human-friendly laboratory identifier or facility code for the sample
+      (e.g., 'ALS-12.3.1-SAMPLE-001', 'LAB-PROT-2024-01'). Used for local reference
+      and tracking within laboratory workflows.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: sample_code
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: string
+    required: true
+  sample_type:
+    name: sample_type
+    description: Type of biological sample
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: sample_type
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: SampleTypeEnum
+    required: true
+  molecular_weight:
+    name: molecular_weight
+    description: Molecular weight, typically specified in kilodaltons (kDa). Data
+      providers may specify alternative units (e.g., Daltons, g/mol) by including
+      the unit in the QuantityValue.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: molecular_weight
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: QuantityValue
+    inlined: true
+  concentration:
+    name: concentration
+    description: Sample concentration, typically specified in mg/mL or µM. Data providers
+      may specify alternative units (e.g., molar, g/L) by including the unit in the
+      QuantityValue.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: concentration
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: QuantityValue
+    inlined: true
+  buffer_composition:
+    name: buffer_composition
+    description: Buffer composition including pH, salts, additives
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: buffer_composition
+    owner: PlantSample
+    domain_of:
+    - Sample
+    - MeasurementConditions
+    range: BufferComposition
+  preparation_method:
+    name: preparation_method
+    description: Method used to prepare the sample
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: preparation_method
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: string
+  storage_conditions:
+    name: storage_conditions
+    description: Storage conditions for the sample
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: storage_conditions
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: StorageConditions
+  organism:
+    name: organism
+    description: Source organism for the sample (e.g., NCBITaxon:3702 for Arabidopsis
+      thaliana)
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: organism
+    owner: PlantSample
+    domain_of:
+    - Sample
+    - AggregatedProteinView
+    range: OntologyTerm
+  anatomy:
+    name: anatomy
+    description: Anatomical part or tissue (e.g., UBERON:0008945 for leaf)
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: anatomy
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: OntologyTerm
+  cell_type:
+    name: cell_type
+    description: Cell type if applicable (e.g., CL:0000057 for fibroblast)
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: cell_type
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: OntologyTerm
+  parent_sample_id:
+    name: parent_sample_id
+    description: Reference to parent sample for derivation tracking
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: parent_sample_id
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: Sample
+  purity_percentage:
+    name: purity_percentage
+    description: 'Sample purity, typically specified as a percentage (range: 0-100).
+      Data providers may specify as decimal fraction by including the unit in the
+      QuantityValue.'
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: purity_percentage
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: QuantityValue
+    inlined: true
+  quality_metrics:
+    name: quality_metrics
+    description: Quality control metrics for the sample
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: quality_metrics
+    owner: PlantSample
+    domain_of:
+    - Sample
+    range: string
+  id:
+    name: id
+    description: Globally unique identifier as an IRI or CURIE for machine processing
+      and external references. Used for linking data across systems and semantic web
+      integration.
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    identifier: true
+    alias: id
+    owner: PlantSample
+    domain_of:
+    - NamedThing
+    - Attribute
+    range: uriorcurie
+    required: true
+  title:
+    name: title
+    description: A human-readable name or title for this entity
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    slot_uri: dcterms:title
+    alias: title
+    owner: PlantSample
+    domain_of:
+    - NamedThing
+    range: string
+  description:
+    name: description
+    description: A detailed textual description of this entity
+    from_schema: https://w3id.org/aims-leaf/
+    rank: 1000
+    alias: description
+    owner: PlantSample
+    domain_of:
+    - NamedThing
+    - AttributeGroup
+    range: string
+
+</code></pre>
+</details>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
