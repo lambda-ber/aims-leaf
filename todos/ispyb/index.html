@@ -610,7 +610,7 @@
   
   
   <span class="md-ellipsis">
-    Examples
+    Technical
     
   </span>
   
@@ -620,74 +620,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Examples
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../examples/simplescattering-glurs-analysis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Simple Scattering GluRS Dataset
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Technical
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Technical
           </label>
@@ -738,10 +670,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -754,8 +686,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Slides
           </label>
@@ -877,13 +809,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#etl-strategy" class="md-nav__link">
+  <a href="#integration-strategy" class="md-nav__link">
     <span class="md-ellipsis">
-      ETL Strategy
+      Integration Strategy
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="ETL Strategy">
+    <nav class="md-nav" aria-label="Integration Strategy">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -905,9 +837,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#phase-3-etl-scripts" class="md-nav__link">
+  <a href="#phase-3-conversion-scripts" class="md-nav__link">
     <span class="md-ellipsis">
-      Phase 3: ETL Scripts
+      Phase 3: Conversion Scripts
     </span>
   </a>
   
@@ -1004,9 +936,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#etl-infrastructure-priority-high" class="md-nav__link">
+  <a href="#data-integration-infrastructure-priority-high" class="md-nav__link">
     <span class="md-ellipsis">
-      ETL Infrastructure (Priority: High)
+      Data Integration Infrastructure (Priority: High)
     </span>
   </a>
   
@@ -1159,7 +1091,7 @@
 - <code>DataCollection</code>, <code>DataCollectionGroup</code>, <code>Detector</code>, <code>GridInfo</code>
 - <code>AutoProcProgram</code>, <code>AutoProcIntegration</code>, <code>AutoProcScaling</code>, <code>AutoProcScalingStatistics</code>
 - <code>PhasingStep</code>, <code>PhasingAnalysis</code>, <code>ModelBuilding</code></p>
-<h2 id="etl-strategy">ETL Strategy</h2>
+<h2 id="integration-strategy">Integration Strategy</h2>
 <h3 id="phase-1-schema-import-duckdb">Phase 1: Schema Import (DuckDB)</h3>
 <p>Load ISPyB DDL into DuckDB for analysis and querying:</p>
 <pre><code class="language-bash"># Download DDL
@@ -1187,8 +1119,8 @@ mappings:
     lambda_ber_slot: resolution_high
     transform: null
 </code></pre>
-<h3 id="phase-3-etl-scripts">Phase 3: ETL Scripts</h3>
-<pre><code class="language-python"># src/aims_leaf_schema/etl/ispyb_import.py
+<h3 id="phase-3-conversion-scripts">Phase 3: Conversion Scripts</h3>
+<pre><code class="language-python"># src/aims_leaf_schema/integrations/ispyb_import.py
 &quot;&quot;&quot;Import ISPyB data into aims-leaf format.&quot;&quot;&quot;
 
 def ispyb_to_study(session: dict) -&gt; Study:
@@ -1258,14 +1190,14 @@ def ispyb_to_workflow_run(autoproc: dict) -&gt; WorkflowRun:
 - rmerge, rpim, cc_half, completeness_percent
 - i_over_sigma, multiplicity</p>
 <h2 id="remaining-tasks">Remaining Tasks</h2>
-<h3 id="etl-infrastructure-priority-high">ETL Infrastructure (Priority: High)</h3>
+<h3 id="data-integration-infrastructure-priority-high">Data Integration Infrastructure (Priority: High)</h3>
 <ul>
 <li>[ ] Download and mirror ISPyB DDL to <code>assets/external/ispyb/</code></li>
 <li>[ ] Create <code>scripts/mysql_to_duckdb.py</code> for DDL conversion</li>
 <li>[ ] Create <code>db/ispyb_schema.ddb</code> with empty ISPyB tables</li>
 <li>[ ] Create <code>mappings/ispyb_to_lambda_ber.yaml</code> mapping file</li>
-<li>[ ] Create <code>src/aims_leaf_schema/etl/ispyb_import.py</code> ETL module</li>
-<li>[ ] Add <code>just ispyb-sync</code> target for running ETL</li>
+<li>[ ] Create <code>src/aims_leaf_schema/integrations/ispyb_import.py</code> import module</li>
+<li>[ ] Add <code>just ispyb-sync</code> target for running imports</li>
 </ul>
 <h3 id="samplecontainer-tracking-priority-medium">Sample/Container Tracking (Priority: Medium)</h3>
 <p>Fields for sample logistics (not yet implemented):</p>
