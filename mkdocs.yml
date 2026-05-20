@@ -23,23 +23,14 @@ plugins:
   - mermaid2
 nav:
   - Home: index.md
-  - Schema: elements/index.md
+  - Data Model Overview: schema-overview.md
   - Background:
     - Overview: background/index.md
-    - NEXUS: background/nexus.md
-    - mmCIF: background/mmcif.md
-    - EMPIAR: background/empiar.md
-    - EMDB: background/emdb.md
-    - DIALS: background/dials.md
-    - SASDB: background/sasdb.md
-    - REMBI: background/rembi-alignment.md
-    - Data Lakehouse Strategy: background/aims-leaf-data-lakehouse-strategy.md
-    - Integration with BER: background/ber-doe-facilities.md
-    - Data Quality Challenges: background/data-quality-challenges.md
+    - Project Context: background/project-context.md
+    - Multiscale Data Integration: background/data-integration.md
+    - AI/ML Framework: background/ai-ml-framework.md
   - Technical:
-    - Mapping to OME: technical/ome-mapping.md
-  - Slides:
-    - Overview: slides/overview.html
-    - Technical Deep Dive: slides/technical-overview.html
+    - Data Model Direction: technical/data-model-direction.md
+    - Roadmap: technical/roadmap.md
 site_url: https://lambda-ber.github.io/aims-leaf
 repo_url: https://github.com/lambda-ber/aims-leaf
