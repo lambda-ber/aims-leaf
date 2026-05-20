@@ -5,59 +5,7 @@
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/Any/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/AttributeValue/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/BeamlineInstrument/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/FacilityTypeEnum/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/InstrumentCategoryEnum/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/MolecularWeightValue/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/detector/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/facility_name/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/facility_ror/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/instrument_category/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/mail_in_service/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
          <loc>https://lambda-ber.github.io/aims-leaf/schema-overview/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/techniques_supported/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/website/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
@@ -65,59 +13,15 @@
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/ber-doe-facilities/</loc>
+         <loc>https://lambda-ber.github.io/aims-leaf/background/ai-ml-framework/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/data-quality-challenges/</loc>
+         <loc>https://lambda-ber.github.io/aims-leaf/background/data-integration/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/dials/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/emdb/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/empiar/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/lambda-ber-schema-data-lakehouse-strategy/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/mmcif/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/nexus/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/ome-alignment/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/onedep-pdb-deposition/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/proteindiffraction/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/rembi-alignment/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/sasdb/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/background/validation-lessons-kibler-2024/</loc>
+         <loc>https://lambda-ber.github.io/aims-leaf/background/project-context/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
@@ -3017,83 +2921,11 @@
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/ideas/ai-ml-metadata-integration/</loc>
+         <loc>https://lambda-ber.github.io/aims-leaf/technical/data-model-direction/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
     <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/ideas/dynamics-data-expansion/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/ideas/experiment-outcomes-tracking/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/ideas/image-segmentation-integration/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/ideas/negative-results-and-replication/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/ideas/neutron-techniques-expansion/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/ideas/nsls2-integration/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/ideas/sbkb/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/ideas/vips-light-microscopy/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/plans/issue-31-relational-schema/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/sites/activity2-presentations-summary/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/slides/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/slides/9B7F-example/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/slides/ontologies-for-structural-biology/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/slides/overview/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/slides/technical-overview/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/technical/ome-mapping/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/todos/FTIR/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/todos/bluesky/</loc>
-         <lastmod>2026-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://lambda-ber.github.io/aims-leaf/todos/ispyb/</loc>
+         <loc>https://lambda-ber.github.io/aims-leaf/technical/roadmap/</loc>
          <lastmod>2026-05-20</lastmod>
     </url>
 </urlset>

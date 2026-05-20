@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://lambda-ber.github.io/aims-leaf/schema-overview/">
       
       
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../background/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>AIMS-LEAF Overview - aims-leaf</title>
+        <title>Data Model Overview - aims-leaf</title>
       
     
     
@@ -70,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aims-leaf-overview" class="md-skip">
+        <a href="#data-model-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AIMS-LEAF Overview
+              Data Model Overview
             
           </span>
         </div>
@@ -271,20 +275,182 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../elements/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Data Model Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Schema
+    Data Model Overview
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-modeling-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Modeling Areas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Modeling Areas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#biological-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Biological Context
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-acquisition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Acquisition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computational-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computational Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Principles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flexible-by-modality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flexible by Modality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalable-by-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scalable by Resolution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicit-about-provenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit About Provenance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suitable-for-aiml-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suitable for AI/ML Workflows
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-conceptual-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Conceptual Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-refactor-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Refactor Status
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -357,12 +523,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../background/nexus/" class="md-nav__link">
+      <a href="../background/project-context/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    NEXUS
+    Project Context
     
   </span>
   
@@ -380,12 +546,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../background/mmcif/" class="md-nav__link">
+      <a href="../background/data-integration/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    mmCIF
+    Multiscale Data Integration
     
   </span>
   
@@ -403,173 +569,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../background/empiar/" class="md-nav__link">
+      <a href="../background/ai-ml-framework/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    EMPIAR
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../background/emdb/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    EMDB
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../background/dials/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    DIALS
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../background/sasdb/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    SASDB
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../background/rembi-alignment/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    REMBI
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../background/aims-leaf-data-lakehouse-strategy.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Data Lakehouse Strategy
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../background/ber-doe-facilities/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Integration with BER
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../background/data-quality-challenges/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Data Quality Challenges
+    AI/ML Framework
     
   </span>
   
@@ -632,80 +637,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../technical/ome-mapping/" class="md-nav__link">
+      <a href="../technical/data-model-direction/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Mapping to OME
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Slides
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Slides
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../slides/overview.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
+    Data Model Direction
     
   </span>
   
@@ -723,12 +660,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../slides/technical-overview.html" class="md-nav__link">
+      <a href="../technical/roadmap/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Technical Deep Dive
+    Roadmap
     
   </span>
   
@@ -773,91 +710,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#design-philosophy" class="md-nav__link">
+  <a href="#modeling-objective" class="md-nav__link">
     <span class="md-ellipsis">
-      Design Philosophy
+      Modeling Objective
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#schema-structure" class="md-nav__link">
+  <a href="#core-modeling-areas" class="md-nav__link">
     <span class="md-ellipsis">
-      Schema Structure
+      Core Modeling Areas
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#core-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Core Classes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Core Classes">
+    <nav class="md-nav" aria-label="Core Modeling Areas">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#container" class="md-nav__link">
+  <a href="#biological-context" class="md-nav__link">
     <span class="md-ellipsis">
-      Container
+      Biological Context
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#logical-groupings" class="md-nav__link">
+  <a href="#data-acquisition" class="md-nav__link">
     <span class="md-ellipsis">
-      Logical Groupings
+      Data Acquisition
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#biological-materials" class="md-nav__link">
+  <a href="#computational-layer" class="md-nav__link">
     <span class="md-ellipsis">
-      Biological Materials
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instrumentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instrumentation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-collection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Collection
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-processing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Processing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-products" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Products
+      Computational Layer
     </span>
   </a>
   
@@ -869,46 +761,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#association-tables" class="md-nav__link">
+  <a href="#design-principles" class="md-nav__link">
     <span class="md-ellipsis">
-      Association Tables
+      Design Principles
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supporting-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supporting Classes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Supporting Classes">
+    <nav class="md-nav" aria-label="Design Principles">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sample-metadata" class="md-nav__link">
+  <a href="#flexible-by-modality" class="md-nav__link">
     <span class="md-ellipsis">
-      Sample Metadata
+      Flexible by Modality
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#preparation-details" class="md-nav__link">
+  <a href="#scalable-by-resolution" class="md-nav__link">
     <span class="md-ellipsis">
-      Preparation Details
+      Scalable by Resolution
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#quality-processing" class="md-nav__link">
+  <a href="#explicit-about-provenance" class="md-nav__link">
     <span class="md-ellipsis">
-      Quality &amp; Processing
+      Explicit About Provenance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suitable-for-aiml-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Suitable for AI/ML Workflows
     </span>
   </a>
   
@@ -920,78 +812,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-enumerations" class="md-nav__link">
+  <a href="#example-conceptual-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Enumerations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Key Enumerations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sample-preparation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sample &amp; Preparation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#techniques-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Techniques &amp; Methods
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instruments-detectors" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instruments &amp; Detectors
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data &amp; Files
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-techniques" class="md-nav__link">
-    <span class="md-ellipsis">
-      Supported Techniques
+      Example Conceptual Flow
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-cryo-em-study" class="md-nav__link">
+  <a href="#current-refactor-status" class="md-nav__link">
     <span class="md-ellipsis">
-      Example: Cryo-EM Study
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#external-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      External Links
+      Current Refactor Status
     </span>
   </a>
   
@@ -1016,488 +848,51 @@
   
 
 
-<h1 id="aims-leaf-overview">AIMS-LEAF Overview</h1>
-<p>The <a href="https://w3id.org/aims-leaf/">aims-leaf</a> is a comprehensive schema for representing multimodal structural biology imaging data, from atomic-resolution structures to tissue-level organization.</p>
-<h2 id="design-philosophy">Design Philosophy</h2>
-<p>The schema follows a <strong>relational design</strong> with:
-- Flat entity collections stored at the Dataset level
-- Explicit association tables for many-to-many relationships
-- SQL-friendly structure that maps cleanly to normalized databases</p>
-<h2 id="schema-structure">Schema Structure</h2>
-<pre><code>Dataset (root container)
-├── Entity Tables (flat collections)
-│   ├── studies
-│   ├── samples
-│   ├── sample_preparations
-│   ├── instruments
-│   ├── experiment_runs
-│   ├── workflow_runs
-│   ├── data_files
-│   └── images
-│
-└── Association Tables (M:N relationships)
-    ├── study_sample_associations
-    ├── study_experiment_associations
-    ├── study_workflow_associations
-    ├── experiment_sample_associations
-    ├── experiment_instrument_associations
-    ├── workflow_experiment_associations
-    ├── workflow_input_associations
-    └── workflow_output_associations
-</code></pre>
-<h2 id="core-classes">Core Classes</h2>
-<h3 id="container">Container</h3>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/Dataset">Dataset</a></td>
-<td>Root container holding all entity collections and association tables</td>
-</tr>
-</tbody>
-</table>
-<h3 id="logical-groupings">Logical Groupings</h3>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/Study">Study</a></td>
-<td>Lightweight grouping of related experiments investigating a research question</td>
-</tr>
-</tbody>
-</table>
-<h3 id="biological-materials">Biological Materials</h3>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/Sample">Sample</a></td>
-<td>Biological specimens (proteins, nucleic acids, complexes, cells, tissues)</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/ProteinConstruct">ProteinConstruct</a></td>
-<td>Detailed protein construct information including expression system</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/SamplePreparation">SamplePreparation</a></td>
-<td>How samples were prepared for specific techniques</td>
-</tr>
-</tbody>
-</table>
-<h3 id="instrumentation">Instrumentation</h3>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/Instrument">Instrument</a></td>
-<td>Base class for all instruments</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/CryoEMInstrument">CryoEMInstrument</a></td>
-<td>Cryo-electron microscopes (e.g., Titan Krios)</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/XRayInstrument">XRayInstrument</a></td>
-<td>X-ray diffractometers and synchrotron beamlines</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/SAXSInstrument">SAXSInstrument</a></td>
-<td>Small-angle X-ray scattering instruments</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/BeamlineInstrument">BeamlineInstrument</a></td>
-<td>Synchrotron beamline specifications</td>
-</tr>
-</tbody>
-</table>
-<h3 id="data-collection">Data Collection</h3>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/ExperimentRun">ExperimentRun</a></td>
-<td>Individual data collection sessions with quality metrics</td>
-</tr>
-</tbody>
-</table>
-<h3 id="data-processing">Data Processing</h3>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/WorkflowRun">WorkflowRun</a></td>
-<td>Computational processing steps (motion correction, reconstruction, refinement)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="data-products">Data Products</h3>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/DataFile">DataFile</a></td>
-<td>Any files generated or used, with checksums for integrity</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/Image">Image</a></td>
-<td>Base class for all imaging data</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/Micrograph">Micrograph</a></td>
-<td>2D electron microscopy images</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/Movie">Movie</a></td>
-<td>Cryo-EM movie stacks</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/FTIRImage">FTIRImage</a></td>
-<td>Infrared spectroscopy molecular composition maps</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/FluorescenceImage">FluorescenceImage</a></td>
-<td>Fluorophore-labeled cellular imaging</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/OpticalImage">OpticalImage</a></td>
-<td>Brightfield/phase contrast microscopy</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/XRFImage">XRFImage</a></td>
-<td>X-ray fluorescence elemental distribution maps</td>
-</tr>
-</tbody>
-</table>
-<h2 id="association-tables">Association Tables</h2>
-<p>Association tables model many-to-many relationships and can carry relationship metadata:</p>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Links</th>
-<th>Metadata</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/StudySampleAssociation">StudySampleAssociation</a></td>
-<td>Study ↔ Sample</td>
-<td>role (target, control, reference)</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/StudyExperimentAssociation">StudyExperimentAssociation</a></td>
-<td>Study ↔ ExperimentRun</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/StudyWorkflowAssociation">StudyWorkflowAssociation</a></td>
-<td>Study ↔ WorkflowRun</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/ExperimentSampleAssociation">ExperimentSampleAssociation</a></td>
-<td>ExperimentRun ↔ Sample</td>
-<td>role, preparation used</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/ExperimentInstrumentAssociation">ExperimentInstrumentAssociation</a></td>
-<td>ExperimentRun ↔ Instrument</td>
-<td>role (primary, detector)</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/WorkflowExperimentAssociation">WorkflowExperimentAssociation</a></td>
-<td>WorkflowRun ↔ ExperimentRun</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/WorkflowInputAssociation">WorkflowInputAssociation</a></td>
-<td>WorkflowRun ↔ DataFile</td>
-<td>input type</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/WorkflowOutputAssociation">WorkflowOutputAssociation</a></td>
-<td>WorkflowRun ↔ DataFile</td>
-<td>output type</td>
-</tr>
-</tbody>
-</table>
-<h2 id="supporting-classes">Supporting Classes</h2>
-<h3 id="sample-metadata">Sample Metadata</h3>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/MolecularComposition">MolecularComposition</a></td>
-<td>Sequences, modifications, ligands</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/BufferComposition">BufferComposition</a></td>
-<td>pH, salts, additives</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/StorageConditions">StorageConditions</a></td>
-<td>Temperature, duration, method</td>
-</tr>
-</tbody>
-</table>
-<h3 id="preparation-details">Preparation Details</h3>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/CryoEMPreparation">CryoEMPreparation</a></td>
-<td>Grid type, vitrification parameters</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/CrystallizationConditions">CrystallizationConditions</a></td>
-<td>Crystal growth conditions</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/XRayPreparation">XRayPreparation</a></td>
-<td>X-ray specific preparation</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/SAXSPreparation">SAXSPreparation</a></td>
-<td>SAXS/WAXS preparation</td>
-</tr>
-</tbody>
-</table>
-<h3 id="quality-processing">Quality &amp; Processing</h3>
-<table>
-<thead>
-<tr>
-<th>Class</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/QualityMetrics">QualityMetrics</a></td>
-<td>Resolution, R-factors, validation scores</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/ComputeResources">ComputeResources</a></td>
-<td>CPU/GPU hours, memory usage</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/ExperimentalConditions">ExperimentalConditions</a></td>
-<td>Temperature, humidity during collection</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/DataCollectionStrategy">DataCollectionStrategy</a></td>
-<td>Collection parameters and strategy</td>
-</tr>
-</tbody>
-</table>
-<h2 id="key-enumerations">Key Enumerations</h2>
-<h3 id="sample-preparation">Sample &amp; Preparation</h3>
-<table>
-<thead>
-<tr>
-<th>Enum</th>
-<th>Examples</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/SampleTypeEnum">SampleTypeEnum</a></td>
-<td>protein, nucleic_acid, complex, cell, tissue</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/PreparationTypeEnum">PreparationTypeEnum</a></td>
-<td>cryo_em_grid, crystallization, saxs_sample</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/GridTypeEnum">GridTypeEnum</a></td>
-<td>holey_carbon, continuous_carbon, graphene</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/VitrificationMethodEnum">VitrificationMethodEnum</a></td>
-<td>plunge_freezing, focused_ion_beam</td>
-</tr>
-</tbody>
-</table>
-<h3 id="techniques-methods">Techniques &amp; Methods</h3>
-<table>
-<thead>
-<tr>
-<th>Enum</th>
-<th>Examples</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/TechniqueEnum">TechniqueEnum</a></td>
-<td>cryo_em, xray_crystallography, saxs, sans, cryo_et</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/WorkflowTypeEnum">WorkflowTypeEnum</a></td>
-<td>motion_correction, ctf_estimation, refinement, model_building</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/PhasingMethodEnum">PhasingMethodEnum</a></td>
-<td>molecular_replacement, sad, mad, direct_methods</td>
-</tr>
-</tbody>
-</table>
-<h3 id="instruments-detectors">Instruments &amp; Detectors</h3>
-<table>
-<thead>
-<tr>
-<th>Enum</th>
-<th>Examples</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/DetectorTypeEnum">DetectorTypeEnum</a></td>
-<td>direct_electron, ccd, cmos</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/XRaySourceTypeEnum">XRaySourceTypeEnum</a></td>
-<td>synchrotron, rotating_anode, sealed_tube</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/BeamlineEnum">BeamlineEnum</a></td>
-<td>ALS beamlines (8.2.1, 8.2.2, 8.3.1, 12.3.1, etc.)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="data-files">Data &amp; Files</h3>
-<table>
-<thead>
-<tr>
-<th>Enum</th>
-<th>Examples</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/FileFormatEnum">FileFormatEnum</a></td>
-<td>mrc, pdb, mmcif, hdf5, tiff</td>
-</tr>
-<tr>
-<td><a href="https://w3id.org/aims-leaf/DataTypeEnum">DataTypeEnum</a></td>
-<td>micrograph, particles, volume, model</td>
-</tr>
-</tbody>
-</table>
-<h2 id="supported-techniques">Supported Techniques</h2>
-<p>The schema supports a wide range of structural biology techniques:</p>
-<table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Techniques</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Electron Microscopy</strong></td>
-<td>Cryo-EM single particle, cryo-ET, electron crystallography</td>
-</tr>
-<tr>
-<td><strong>X-ray Methods</strong></td>
-<td>Crystallography, SAXS, WAXS, XRF</td>
-</tr>
-<tr>
-<td><strong>Neutron Methods</strong></td>
-<td>SANS</td>
-</tr>
-<tr>
-<td><strong>Light Microscopy</strong></td>
-<td>Fluorescence, confocal, super-resolution</td>
-</tr>
-<tr>
-<td><strong>Spectroscopy</strong></td>
-<td>FTIR imaging, Raman</td>
-</tr>
-</tbody>
-</table>
-<h2 id="example-cryo-em-study">Example: Cryo-EM Study</h2>
-<pre><code class="language-yaml">id: dataset:cryo-em-example
-title: Structure of Human Ribosome
-studies:
-  - id: study:ribosome-cryo-em
-    title: Cryo-EM analysis of human ribosome
-samples:
-  - id: sample:ribosome-prep
-    sample_code: RIBO-2024-001
-    sample_type: complex
-    concentration:
-      numeric_value: 2.5
-      unit: mg/mL
-instruments:
-  - id: instrument:titan-krios
-    instrument_code: TITAN-KRIOS-1
-experiment_runs:
-  - id: exp:data-collection-1
-    experiment_code: RIBO-DC-001
-    technique: cryo_em
-workflow_runs:
-  - id: wf:reconstruction
-    workflow_code: RIBO-RECON-001
-    workflow_type: refinement
-    software_name: RELION
-# Association tables link entities
-experiment_sample_associations:
-  - experiment_id: exp:data-collection-1
-    sample_id: sample:ribosome-prep
-experiment_instrument_associations:
-  - experiment_id: exp:data-collection-1
-    instrument_id: instrument:titan-krios
-</code></pre>
-<h2 id="external-links">External Links</h2>
+<h1 id="data-model-overview">Data Model Overview</h1>
+<p>This page describes the AIMS-LEAF modeling direction at a conceptual level. It is intentionally centered on plant heat stress tolerance and multimodal predictive modeling rather than the inherited legacy emphasis.</p>
+<h2 id="modeling-objective">Modeling Objective</h2>
+<p>The project needs a data model that can support learning across linked biological scales. The core unit is not a single assay type. It is the relationship between intervention, context, observation, and outcome.</p>
+<h2 id="core-modeling-areas">Core Modeling Areas</h2>
+<h3 id="biological-context">Biological Context</h3>
 <ul>
-<li><strong>Schema Repository</strong>: <a href="https://github.com/lambda-ber/aims-leaf">github.com/lambda-ber/aims-leaf</a></li>
-<li><strong>W3ID Namespace</strong>: <a href="https://w3id.org/aims-leaf/">w3id.org/aims-leaf</a></li>
-<li><strong>LinkML</strong>: <a href="https://linkml.io/">linkml.io</a></li>
+<li>host organism and plant line</li>
+<li>genotype, edited locus, or other engineered change</li>
+<li>treatment and environmental exposure</li>
+<li>developmental stage and sampling context</li>
 </ul>
+<h3 id="data-acquisition">Data Acquisition</h3>
+<ul>
+<li>sequencing-based measurements</li>
+<li>cellular, tissue, and organism-scale imaging</li>
+<li>phenotype observations and assay summaries</li>
+<li>experimental metadata needed to compare measurements across runs and sites</li>
+</ul>
+<h3 id="computational-layer">Computational Layer</h3>
+<ul>
+<li>preprocessing and feature extraction workflows</li>
+<li>model-ready derived tables and embeddings</li>
+<li>predictive outputs, confidence values, and evaluation metrics</li>
+<li>provenance connecting raw inputs to downstream inference</li>
+</ul>
+<h2 id="design-principles">Design Principles</h2>
+<h3 id="flexible-by-modality">Flexible by Modality</h3>
+<p>The model should not assume one preferred instrument or assay family. It should be able to accommodate new imaging pipelines, sequencing assays, and derived feature sets without forcing a redesign of the entire schema.</p>
+<h3 id="scalable-by-resolution">Scalable by Resolution</h3>
+<p>AIMS-LEAF needs to support multiscale linkage, from gene-level perturbation through image-derived traits and whole-host phenotype.</p>
+<h3 id="explicit-about-provenance">Explicit About Provenance</h3>
+<p>Predictive modeling is only useful if inputs and transformations are traceable. The model therefore needs to preserve links between source observations, feature engineering, trained models, and evaluated predictions.</p>
+<h3 id="suitable-for-aiml-workflows">Suitable for AI/ML Workflows</h3>
+<p>The schema should make it straightforward to assemble analysis tables, training sets, validation sets, and cross-modal feature views without extensive manual reshaping.</p>
+<h2 id="example-conceptual-flow">Example Conceptual Flow</h2>
+<ol>
+<li>Register a plant line and its genetic modification.</li>
+<li>Record heat stress treatment conditions and sampling schedule.</li>
+<li>Link sequencing outputs, imaging outputs, and phenotype measurements to the same biological context.</li>
+<li>Track feature extraction and model training workflows.</li>
+<li>Store predictions and observed outcomes so the project can compare expected and actual host response.</li>
+</ol>
+<h2 id="current-refactor-status">Current Refactor Status</h2>
+<p>The inherited repository still contains schema artifacts from its previous project scope. Documentation in this site now reflects the intended AIMS-LEAF direction and will guide subsequent schema refactoring.</p>
 
 
 
